@@ -1,13 +1,3 @@
-// Header Component
-// class MyHeader extends HTMLElement {
-//   connectedCallback() {
-//     this.innerHTML = `
-
-// `;
-//   }
-// }
-
-// customElements.define("my-header", MyHeader);
 // Fixed Navbar
 $(window).scroll(function () {
   if ($(this).scrollTop() > 300) {

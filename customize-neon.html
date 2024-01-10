@@ -35,160 +35,8 @@
         mix-blend-mode: unset;
       "></div>
     <!-- top header  -->
-    <header>
-      <section class="w-100">
-        <div class="container-fluid w-100 gx-0">
-          <div class="announcement-bar">
-            <p class="announcement-message text-center">
-              🎆 New Year 2024 Sale! Flat 24% OFF at Checkout
-            </p>
-          </div>
-        </div>
-      </section>
-      <div class="container-fluid topbar bg-dark d-none d-lg-block">
-        <div class="container px-0">
-          <div class="topbar-top d-flex justify-content-center flex-lg-wrap">
-            <div class="top-info flex-grow-0 break">
-              <span class="rounded-circle btn-sm-square me-2">
-                <img src="assets/images/svg/warr.svg" alt />
-              </span>
-              <div class="border-white d-flex align-items-center">
-                <p class="mb-0 text-white fs-6 fw-normal">2 Year Warranty</p>
-              </div>
-            </div>
-            <div class="top-info flex-grow-0 break">
-              <span class="rounded-circle btn-sm-square me-2">
-                <img src="assets/images/svg/happy.svg" alt />
-              </span>
-              <div class="border-white d-flex align-items-center">
-                <p class="mb-0 text-white fs-6 fw-normal">
-                  12000+ Happy Customers
-                </p>
-              </div>
-            </div>
-            <div class="top-info flex-grow-0 mx-3 break-2">
-              <span class="rounded-circle btn-sm-square me-2">
-                <img src="assets/images/svg/delivery.svg" alt />
-              </span>
-              <div class="border-white d-flex align-items-center">
-                <p class="mb-0 text-white fs-6 fw-normal">
-                  100% Timely Delivery
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid bg-light">
-        <div class="container px-0">
-          <nav class="navbar navbar-light navbar-expand-xl">
-            <a href="index.html" class="navbar-brand">
-              <h1 class="text-primary display-4">Neon</h1>
-            </a>
-            <button
-              class="navbar-toggler py-2 px-3 collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarCollapse"
-              aria-expanded="false">
-              <span class="fa fa-bars text-primary"></span>
-            </button>
-            <div
-              class="navbar-collapse bg-light py-3 collapse"
-              id="navbarCollapse">
-              <div class="navbar-nav mx-auto border-top">
-                <div class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle active"
-                    data-bs-toggle="dropdown">Customize</a>
-                  <!-- <ul class="dropdown-menu m-0 sub-menu mega-menu site-nav-dropdown  rounded-0" style="display: flex; flex-direction: row;">
-                          <li id="" class="menu-item menu-item-type-post_type menu-item-object-page column-title column-1"><img src="https://source.unsplash.com/ThpsvZHwfzY/400x250" class="img-resp w-100 img-fluid"><a href="">Column Title</a></li>
-                          <li id="" class="menu-item menu-item-type-post_type menu-item-object-page column-title column-2"><img src="https://source.unsplash.com/tunKXtWz12U/400x250" class="img-resp w-100 img-fluid"><a href="">Column Title</a></li>
-                    
-                      </ul> -->
-                </div>
-                <div class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-bs-toggle="dropdown">Shop Neon</a>
-                  <div class="dropdown-menu m-0 site-nav-dropdown"></div>
-                </div>
-
-                <a href class="nav-item nav-link">Head Light</a>
-                <a href class="nav-item nav-link">Business Neon Logo</a>
-                <a href="#" class="nav-item nav-link">Why Attack</a>
-              </div>
-              <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                <button
-                  class="btn-search btn btn-primary btn-primary-outline-0 icon-circle"
-                  data-bs-toggle="modal"
-                  data-bs-target="#searchModal">
-                  <i class="fas fa-search"></i>
-                </button>
-                <a
-                  href="#"
-                  class="btn btn-cart btn-primary-outline-0 icon-circle rounded-pill py-3 px-4 ms-4"
-                  id="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a
-                  href="login.html"
-                  class="btn btn-user btn-primary-outline-0 icon-circle rounded-pill py-3 px-4 ms-4"><i
-                    class="fa-solid fa-user"></i></a>
-                <div class="cart">
-                  <h2 class="cart-title">Your Cart</h2>
-                  <div class="cart-content"></div>
-                  <!-- total -->
-                  <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
-                  </div>
-                  <!-- buy button -->
-                  <button class="btn-buy" type="button">Checkout</button>
-                  <!-- cart close -->
-                  <span id="close-cart">x</span>
-                  <!-- <i id="close-cart" class='fa fa-x'></i> -->
-                  <!-- <button id="close-cart" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div
-        class="modal"
-        id="searchModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content rounded-0">
-            <div class="modal-header">
-              <h4 class="modal-title mb-0" id="exampleModalLabel">
-                Search by keyword
-              </h4>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex align-items-center">
-              <div class="input-group w-75 mx-auto d-flex">
-                <input
-                  type="search"
-                  class="form-control p-3"
-                  placeholder="keywords"
-                  aria-describedby="search-icon-1" />
-                <span id="search-icon-1" class="input-group-text p-3"><i
-                    class="fa fa-search"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- <my-header></my-header> -->
+  
+    <my-header></my-header>
 
     <!-- breadcrumb ==== -->
     <my-breadcrumb></my-breadcrumb>
@@ -196,18 +44,18 @@
     <my-story></my-story>
 
     <!-- customize neon ===== -->
-    <section class="customize-neon py-5">
+    <section class="customize-neon py-lg-5" id="featured">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6  fixy">
+          <div class="col-lg-6  fixy" id="f-left">
             <div class="preview-full ">
               <h1 id="Preview-text" class="neonText">
                 Preview
               </h1>
             </div>
           </div>
-          <div class="col-lg-6 scrolled">
-            <div class="fontset">
+          <div class="col-lg-6 scrolled" id="f-right">
+            <div class="fontset" >
               <h1 class="dispay-1 mx-lg-5 text-white">Customise Neon</h1>
               <div class="rating mx-lg-5">
                 <i class="fa fa-star text-warning"></i>
@@ -242,14 +90,8 @@
                 maxline="3"></textarea>
             </div>
 
-            <div class="h-divider mx-lg-5 mx-sm-0">
-              <div class="shadow"></div>
-              <div class="text2">
-                <img
-                  src="assets/images/22-223075_neon-rose-popsocket-hd-png-download-removebg-preview.png" />
-              </div>
-            </div>
-            <p class="mx-5 text-white">Pick Your Font</p>
+            <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+            <p class=" mx-lg-5 text-white">Pick Your Font</p>
             <div class="pplr-selecter-options mx-lg-5 mx-sm-0 py-3"><span
                 class="pplr-selecter-item  passionate pplr_brittanysignature active"
                 style="font-family: 'Brittany Signature', sans-serif;">Passionate</span><span
@@ -305,7 +147,7 @@
                 style="font-family: 'Rye', serif;">Jolly</span><span
                 class="pplr-selecter-item  pplr_hexore modern"
                 style="font-family: 'Frijole', system-ui;">MODERN</span></div>
-            <div class="color-select mt-3 mx-5">
+            <div class="color-select mt-3  mx-lg-5">
               <p class=" text-white">Pick Your Color</p>
               <div class="pick-color" onclick="activateColor(event)">
                 <div class="color-pallet active" data-color="#fff"></div>
@@ -320,15 +162,9 @@
                 <div class="color-pallet" data-color="#FFED00"></div>
               </div>
             </div>
-            <div class="h-divider mx-lg-5 mx-sm-0">
-              <div class="shadow"></div>
-              <div class="text2">
-                <img
-                  src="assets/images/22-223075_neon-rose-popsocket-hd-png-download-removebg-preview.png" />
-              </div>
-            </div>
-            <p class="mx-5 mt-3 text-white">Pick Your Size</p>
-        <div class="size-wrapper d-flex mx-5">
+            <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+            <p class=" mx-lg-5 mt-3 text-white">Pick Your Size</p>
+        <div class="size-wrapper d-flex  mx-lg-5">
         <span class="pplr-drop-item active" onclick="changeFontSize(40, 'Regular')">
           Regular
           <span class="custom_span_size">Width: 3 "  Height: 10 " </span>
@@ -343,16 +179,56 @@
         </span>
         </div>
         <!-- addon  -->
-        <div class="d-flex mx-5">
+        <div class="d-flex  mx-lg-5 addon">
           <div class="pplr-wrapper  pplr-checkbox  pplr-waterproof-ip67-rated" data-main="5"><label class="oindexlabel">Add Ons</label><label class="pplrlabel" onclick="pplr_unfold(this)"> <input data-pplr_price="3000" data-pplr_price-type="2" type="checkbox" data-frame="5" onchange="updatecondition(5,false,true);LoadPplrWithFont('5',true);" class="pplrcheckbox  pplraddprice" value="Yes" name="properties[Waterproof IP67 Rated]"> Waterproof IP67 Rated <span class="pplr_option_price_span"></span> </label></div>
           <div class="pplr-wrapper  pplr-checkbox  pplr-waterproof-ip67-rated" data-main="5"><label class="oindexlabel">Add Ons</label><label class="pplrlabel" onclick="pplr_unfold(this)"> <input data-pplr_price="3000" data-pplr_price-type="2" type="checkbox" data-frame="5" onchange="updatecondition(5,false,true);LoadPplrWithFont('5',true);" class="pplrcheckbox  pplraddprice" value="Yes" name="properties[Waterproof IP67 Rated]"> Waterproof IP67 Rated <span class="pplr_option_price_span"></span> </label></div>
         </div>
-        <span class="pplr_prev_span mx-5 "><button type="button" onclick="pplr_preview(event)" class="btn pplr-btn  button pplr-preview-btn  Button--secondary ptc_button">Preview</button></span>
-       
+        <span class="pplr_prev_span  mx-lg-5">
+          <button type="button" class="btn pplr-btn button pplr-preview-btn Button--secondary ptc_button" data-bs-toggle="modal" data-bs-target="#myModal">Preview</button>
+        </span>
+        <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+        <div class="price-item  mx-lg-5">₹00</div>
+        <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+        <div class="cart_and_buy  mx-lg-5">
+          
+          <button type="submit" name="add" aria-label="Add to cart" class="neon-button product-form__cart-submit p_a_t_c" data-add-to-cart="">
+            <span data-add-to-cart-text="">Add to cart</span>
+          </button>
+          <hr class=" text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+          
+          <div class="whatsapp_txt_wrap">
+            <p>
+              Have your own logo or design?
+              <a target="_blank" href="api+number&amp;text=I need help in customising my neon sign." aria-describedby="a11y-new-window-external-message" rel="noopener">Click Here</a>
+            </p>
+          </div>
+          <div class="offers--sale">
+            <ul><li>Get Flat 24% Off at Checkout | Use&nbsp;Code&nbsp;:&nbsp;NY24</li></ul>
+          </div>
+        </div>
       </div>
         </div>
       </section>
-      
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="preview-full ">
+                <h1 class="Preview-text neonText" >
+                  Preview
+                </h1>
+              </div>
+              </div>
+            <div class="modal-footer">
+           
+              <button type="button" class="btn btn-primary border-0 outline-none" style="background-color: #12dd7e;" ><i class="fa fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <script>
         function changeFontSize(fontSize, sizeType) {
           // Reset all items to remove the 'active' class
@@ -370,12 +246,36 @@
         }
         
       </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Apply sticky behavior only for larger screens
+    if (window.innerWidth > 768) {
+      gsap.to("#f-left", {
+        scrollTrigger: {
+          trigger: "#f-left",
+          start: "top top",
+          endTrigger: "#f-right",
+          end: "bottom top",
+          pin: true,
+          markers: true
+        }
+      });
+    }
+  });
+</script>
+
+      
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/font-awesome.js"></script>
       <script src="assets/js/customize.js"></script>
-      <!-- <script src="assets/components/breadcrumb.js"></script> -->
+      <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/scrolltrigger@3.9.0/dist/ScrollTrigger.min.js"></script>
+<script src="assets/components/header.js"></script>
+      <script src="assets/components/breadcrumb.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/components/story.js"></script>
     </body>
