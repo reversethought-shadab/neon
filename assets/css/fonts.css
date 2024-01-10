@@ -1,0 +1,261 @@
+
+
+@font-face {
+    font-family: 'dream-angel';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Dream\ Angel.otf) format('otf');
+   
+}
+
+
+@font-face {
+    font-family: 'dream-angel-2';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Dream\ Angel.ttf) format('ttf');
+    
+}
+
+@font-face {
+    font-family: 'passionate';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/PeacemakerPersonalUseRegular-2Oq5o.ttf) format('ttf');
+   
+}
+
+
+@font-face {
+    font-family: 'flory';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Funky\ Signature.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'original';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Octobertwilight-lzwZ.otf) format('otf');
+
+    
+}
+
+
+@font-face {
+    font-family: 'classic';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/CclassicPersonalUse-gxJD1.ttf) format('ttf');
+}
+
+
+@font-face {
+    font-family: 'bojee';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/BrittanySignature.ttf) format('ttf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'funky';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Funky\ Signature.otf) format('otf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'chic';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/CHEMISTR.TTF) format('ttf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'delight';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/DestinePersonalUseRegular-6YAev.otf) format('otf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'classy';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/CraftsmanPersonalUseItalic-x3GM0.ttf) format('ttf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'robo';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/Rocket\ Clouds.ttf) format('ttf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'charming';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Cosmodrome\ Monoline.otf) format('otf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'quirky';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/LudovicusIiDemo-qZLMd.ttf) format('ttf');
+    
+}
+
+
+
+@font-face {
+    font-family: 'stylish';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/BrittanySignature.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'sassy';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Southampton-MRqp.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'stylish';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/BrittanySignature.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'glam';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/GoldenBrickPersonalUseRegular-eZyr6.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'dope';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/CouragesDemo-rgjjK.otf) format('otf');
+}
+@font-face {
+    font-family: 'candy';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Candyinc-9Gl2.otf) format('otf');
+}
+@font-face {
+    font-family: 'acoustic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/KosansDemoRegular-z8G8G.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'spaky';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Zorate.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'vibey';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Hexore.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'lofi';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Butterland.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'bossy';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/FranklinFractureDemoRegular-L35z4.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'iconic';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/LudovicusIiDemo-qZLMd.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'jolly';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Candyinc-9Gl2.otf) format('otf');
+}
+@font-face {
+    font-family: 'modern';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Boarding\ PersonalUse.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'love';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Bastogne.otf) format('otf');
+}
+
+
+/* extra csss  */
+@font-face {font-family: 'Brittanysignature';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Brittanysignature.ttf?v=12310') format('truetype');} 
+@font-face {font-family: 'pFontAwesome';src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');} @font-face {font-family: 'Brittanysignature';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Brittanysignature.ttf?v=12310') format('truetype');} @font-face {font-family: 'Dream-angel';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Dream-angel.ttf?v=12310') format('truetype');} @font-face {font-family: 'Freeflow';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Freeflow.ttf?v=12310') format('truetype');} @font-face {font-family: 'Neoneon';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Neoneon.ttf?v=12310') format('truetype');} @font-face {font-family: 'Maya-sans';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Maya-sans.ttf?v=12310') format('truetype');} @font-face {font-family: 'Handestonie';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Handestonie.ttf?v=12310') format('truetype');} @font-face {font-family: 'Funky-signature';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Funky-signature.ttf?v=12310') format('truetype');} @font-face {font-family: 'Amandavinola';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Amandavinola.ttf?v=12310') format('truetype');} @font-face {font-family: 'Butterland';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Butterland.ttf?v=12310') format('truetype');} @font-face {font-family: 'Bastogne';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Bastogne.ttf?v=12310') format('truetype');} @font-face {font-family: 'Sebastrian-script';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Sebastrian-script.ttf?v=12310') format('truetype');} @font-face {font-family: 'Barques-regular';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Barques-regular.ttf?v=12310') format('truetype');} @font-face {font-family: 'Foundry-font-pack';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Foundry-font-pack.ttf?v=12310') format('truetype');} @font-face {font-family: 'Cosmodrome-monoline';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Cosmodrome-monoline.ttf?v=12310') format('truetype');} @font-face {font-family: 'Geraldyne';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Geraldyne.ttf?v=12310') format('truetype');} @font-face {font-family: 'Rocket-clouds';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Rocket-clouds.ttf?v=12310') format('truetype');} @font-face {font-family: 'Golden-hopes';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Golden-hopes.ttf?v=12310') format('truetype');} @font-face {font-family: 'Lovelo-linebold';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Lovelo-linebold.ttf?v=12310') format('truetype');} @font-face {font-family: 'Chemistry';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Chemistry.ttf?v=12310') format('truetype');} @font-face {font-family: 'Acoustica';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Acoustica.ttf?v=12310') format('truetype');} @font-face {font-family: 'Callifornia';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Callifornia.ttf?v=12310') format('truetype');} @font-face {font-family: 'Boarding-regular';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Boarding-regular.ttf?v=12310') format('truetype');} @font-face {font-family: 'Harmonia';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Harmonia.ttf?v=12310') format('truetype');} @font-face {font-family: 'Whitening';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Whitening.ttf?v=12310') format('truetype');} @font-face {font-family: 'Zorate';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Zorate.ttf?v=12310') format('truetype');} @font-face {font-family: 'Melon';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Melon.ttf?v=12310') format('truetype');} @font-face {font-family: 'Hexore';src: url('https://cdn-zeptoapps.com/product-personalizer/font/hardikecommerce.myshopify.com/Hexore.ttf?v=12310') format('truetype');} 

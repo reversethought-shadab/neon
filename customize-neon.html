@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
+      rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/customize.css" />
+    <link rel="stylesheet" href="assets/css/story.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap');
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "></div>
+    <!-- top header  -->
+  
+    <my-header></my-header>
+
+    <!-- breadcrumb ==== -->
+    <my-breadcrumb></my-breadcrumb>
+    <!-- story  -->
+    <my-story></my-story>
+
+    <!-- customize neon ===== -->
+    <section class="customize-neon py-lg-5" id="featured">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6  fixy" id="f-left">
+            <div class="preview-full ">
+              <h1 id="Preview-text" class="neonText">
+                Preview
+              </h1>
+            </div>
+          </div>
+          <div class="col-lg-6 scrolled" id="f-right">
+            <div class="fontset" >
+              <h1 class="dispay-1 mx-lg-5 text-white">Customise Neon</h1>
+              <div class="rating mx-lg-5">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <span class="text-white">88 Review</span>
+              </div>
+              <div class="price mt-3 mx-lg-5">
+                <h3 class="text-white price-value">₹00</h3>
+              </div>
+              <div class="forlabel mb-3">
+                <label class="indexlabel mx-lg-5">Type Your Text</label>
+              </div>
+              <textarea
+                required
+                type="text"
+                class="mx-lg-5 textarea-neon"
+                data-pplr_price="400"
+                data-pplr_price-type="4"
+                data-color="#ffffff"
+                data-main="1"
+                data-frame="1"
+                oninput="LoadPplrWithFont('1',true,this);"
+                onkeyup="LoadPplrWithFont('1',true,this,event);"
+                style="text-transform: inherit;"
+                d-placeholder="Text Preview"
+                placeholder="Text Preview"
+                name="properties[Regular]"
+                data-maxlength="300"
+                maxline="3"></textarea>
+            </div>
+
+            <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+            <p class=" mx-lg-5 text-white">Pick Your Font</p>
+            <div class="pplr-selecter-options mx-lg-5 mx-sm-0 py-3"><span
+                class="pplr-selecter-item  passionate pplr_brittanysignature active"
+                style="font-family: 'Brittany Signature', sans-serif;">Passionate</span><span
+                class="pplr-selecter-item dream pplr_dream-angel dream"
+                style="font-family: 'Arizonia', cursive;">Dreamy</span><span
+                class="pplr-selecter-item flowy pplr_freeflow"
+                style="font-family: 'Asset', serif;">Flowy</span><span
+                class="pplr-selecter-item  pplr_neoneon original"
+                style=" font-family: 'Bungee Shade', sans-serif;"> Original
+              </span><span class="pplr-selecter-item  pplr_maya-sans classic"
+                style="font-family: 'Dr Sugiyama', cursive;">Classic</span><span
+                class="pplr-selecter-item  pplr_handestonie boujee"
+                style="font-family: 'Freehand', cursive;">Boujee</span><span
+                class="pplr-selecter-item  pplr_funky-signature funky"
+                style="font-family: 'Handlee', cursive;">Funky</span><span
+                class="pplr-selecter-item  pplr_amandavinola chic"
+                style="font-family: 'Long Cang', cursive;">Chic</span><span
+                class="pplr-selecter-item  pplr_butterland delight"
+                style="font-family: 'WindSong', cursive;">Delight</span><span
+                class="pplr-selecter-item  pplr_bastogne classy"
+                style="font-family: 'Zen Tokyo Zoo', system-ui">Classy</span><span
+                class="pplr-selecter-item  pplr_sebastrian-script romantic"
+                style="font-family: 'Xanh Mono', monospace;">Romantic</span><span
+                class="pplr-selecter-item  pplr_barques-regular robo"
+                style="font-family: 'Afacad', sans-serif;">Robo</span><span
+                class="pplr-selecter-item  pplr_foundry-font-pack charming"
+                style="font-family: 'Aguafina Script', cursive;">Charming</span><span
+                class="pplr-selecter-item  pplr_cosmodrome-monoline quirky"
+                style="font-family: 'Arizonia', cursive;">Quirky</span><span
+                class="pplr-selecter-item  pplr_geraldyne stylish"
+                style="font-family: 'Black And White Picture', system-ui;">Stylish</span><span
+                class="pplr-selecter-item  pplr_rocket-clouds sassy"
+                style="font-family: 'Clicker Script', cursive;">Sassy</span><span
+                class="pplr-selecter-item  pplr_golden-hopes glam"
+                style="font-family: 'Dawning of a New Day', cursive;">Glam</span><span
+                class="pplr-selecter-item  pplr_lovelo-linebold dope"
+                style="font-family: 'Handjet', sans-serif;">DOPE</span><span
+                class="pplr-selecter-item  pplr_chemistry chemisty"
+                style="font-family: 'Handlee', cursive;">Chemistry</span><span
+                class="pplr-selecter-item  pplr_acoustica acoustic"
+                style="font-family: 'Herr Von Muellerhoff', cursive;">Acoustic</span><span
+                class="pplr-selecter-item  pplr_callifornia sparky"
+                style="font-family: 'Love Light', cursive;">Sparky</span><span
+                class="pplr-selecter-item  pplr_boarding-regular selected-font vibey"
+                style="font-family: 'Lovers Quarrel', cursive;">Vibey</span><span
+                class="pplr-selecter-item  pplr_harmonia lofi"
+                style="font-family: 'Rubik Maps', system-ui;">LoFi</span><span
+                class="pplr-selecter-item  pplr_whitening bossy"
+                style="font-family: 'Style Script', cursive;">Bossy</span><span
+                class="pplr-selecter-item  pplr_zorate iconic"
+                style="font-family: 'Chakra Petch', sans-serif;">ICONIC</span><span
+                class="pplr-selecter-item  pplr_melon jolly"
+                style="font-family: 'Rye', serif;">Jolly</span><span
+                class="pplr-selecter-item  pplr_hexore modern"
+                style="font-family: 'Frijole', system-ui;">MODERN</span></div>
+            <div class="color-select mt-3  mx-lg-5">
+              <p class=" text-white">Pick Your Color</p>
+              <div class="pick-color" onclick="activateColor(event)">
+                <div class="color-pallet active" data-color="#fff"></div>
+                <div class="color-pallet" data-color="#E5097F"></div>
+                <div class="color-pallet" data-color="#009846"></div>
+                <div class="color-pallet" data-color="#0000FF"></div>
+                <div class="color-pallet" data-color="#834E98"></div>
+                <div class="color-pallet" data-color="#EF7B1B"></div>
+                <div class="color-pallet" data-color="#62BED3"></div>
+                <div class="color-pallet" data-color="#EEDFC8"></div>
+                <div class="color-pallet" data-color="#E31E24"></div>
+                <div class="color-pallet" data-color="#FFED00"></div>
+              </div>
+            </div>
+            <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+            <p class=" mx-lg-5 mt-3 text-white">Pick Your Size</p>
+        <div class="size-wrapper d-flex  mx-lg-5">
+        <span class="pplr-drop-item active" onclick="changeFontSize(40, 'Regular')">
+          Regular
+          <span class="custom_span_size">Width: 3 "  Height: 10 " </span>
+        </span>
+        <span class="pplr-drop-item" onclick="changeFontSize(50, 'Medium')">
+          Medium
+          <span class="custom_span_size">Width: 4 " Height: 13 " </span>
+        </span>
+        <span class="pplr-drop-item" onclick="changeFontSize(60, 'Large')">
+          Large
+          <span class="custom_span_size">Width: 5 "  Height: 15 " </span>
+        </span>
+        </div>
+        <!-- addon  -->
+        <div class="d-flex  mx-lg-5 addon">
+          <div class="pplr-wrapper  pplr-checkbox  pplr-waterproof-ip67-rated" data-main="5"><label class="oindexlabel">Add Ons</label><label class="pplrlabel" onclick="pplr_unfold(this)"> <input data-pplr_price="3000" data-pplr_price-type="2" type="checkbox" data-frame="5" onchange="updatecondition(5,false,true);LoadPplrWithFont('5',true);" class="pplrcheckbox  pplraddprice" value="Yes" name="properties[Waterproof IP67 Rated]"> Waterproof IP67 Rated <span class="pplr_option_price_span"></span> </label></div>
+          <div class="pplr-wrapper  pplr-checkbox  pplr-waterproof-ip67-rated" data-main="5"><label class="oindexlabel">Add Ons</label><label class="pplrlabel" onclick="pplr_unfold(this)"> <input data-pplr_price="3000" data-pplr_price-type="2" type="checkbox" data-frame="5" onchange="updatecondition(5,false,true);LoadPplrWithFont('5',true);" class="pplrcheckbox  pplraddprice" value="Yes" name="properties[Waterproof IP67 Rated]"> Waterproof IP67 Rated <span class="pplr_option_price_span"></span> </label></div>
+        </div>
+        <span class="pplr_prev_span  mx-lg-5">
+          <button type="button" class="btn pplr-btn button pplr-preview-btn Button--secondary ptc_button" data-bs-toggle="modal" data-bs-target="#myModal">Preview</button>
+        </span>
+        <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+        <div class="price-item  mx-lg-5">₹00</div>
+        <hr class="  mx-lg-5 text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+        <div class="cart_and_buy  mx-lg-5">
+          
+          <button type="submit" name="add" aria-label="Add to cart" class="neon-button product-form__cart-submit p_a_t_c" data-add-to-cart="">
+            <span data-add-to-cart-text="">Add to cart</span>
+          </button>
+          <hr class=" text-white" style="border: 1px solid ; border-radius: 2px; color: white;;">
+          
+          <div class="whatsapp_txt_wrap">
+            <p>
+              Have your own logo or design?
+              <a target="_blank" href="api+number&amp;text=I need help in customising my neon sign." aria-describedby="a11y-new-window-external-message" rel="noopener">Click Here</a>
+            </p>
+          </div>
+          <div class="offers--sale">
+            <ul><li>Get Flat 24% Off at Checkout | Use&nbsp;Code&nbsp;:&nbsp;NY24</li></ul>
+          </div>
+        </div>
+      </div>
+        </div>
+      </section>
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="preview-full ">
+                <h1 class="Preview-text neonText" >
+                  Preview
+                </h1>
+              </div>
+              </div>
+            <div class="modal-footer">
+           
+              <button type="button" class="btn btn-primary border-0 outline-none" style="background-color: #12dd7e;" ><i class="fa fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function changeFontSize(fontSize, sizeType) {
+          // Reset all items to remove the 'active' class
+          document.querySelectorAll('.pplr-drop-item').forEach(function (element) {
+            element.classList.remove('active');
+          });
+      
+          // Set the clicked item as active
+          event.currentTarget.classList.add('active');
+      
+          // Set the font size for #Preview-text
+          document.getElementById('Preview-text').style.fontSize = `${fontSize}px`;
+      
+          console.log(`${sizeType} selected. Font size: ${fontSize}px`);
+        }
+        
+      </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Apply sticky behavior only for larger screens
+    if (window.innerWidth > 768) {
+      gsap.to("#f-left", {
+        scrollTrigger: {
+          trigger: "#f-left",
+          start: "top top",
+          endTrigger: "#f-right",
+          end: "bottom top",
+          pin: true,
+          markers: true
+        }
+      });
+    }
+  });
+</script>
+
+      
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/font-awesome.js"></script>
+      <script src="assets/js/customize.js"></script>
+      <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/scrolltrigger@3.9.0/dist/ScrollTrigger.min.js"></script>
+<script src="assets/components/header.js"></script>
+      <script src="assets/components/breadcrumb.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/components/story.js"></script>
+    </body>
+  </html>
