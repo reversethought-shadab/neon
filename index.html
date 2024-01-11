@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/story.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -16,18 +19,355 @@
 
   <body>
     <!-- custom cursor  -->
-    <div id="cursor" style="transform: translate(49px, 969px);"></div>
-    <div id="cursor-border" style="transform: translate(49px, 969px); background-color: unset; --size: 30px; mix-blend-mode: unset;"></div>
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
     <!-- top header  -->
-  <my-header></my-header>
+    <my-header></my-header>
     <my-story></my-story>
-    
-    <!-- banner ===== -->
-    
+
+    <!-- hero  -->
+    <!-- <section class="section py-5" id="home">
+        <div class="hero-container">
+          <div class="bg-layer d-flex align-items-end">
+            <svg class="image-svg" width="1920" height="792" viewBox="0 0 1920 792" fill="none">
+              <path d="M155.44 227.32H227.26V523H155.44L35.32 336.94V523H-36.5V227.32H35.32L155.44 413.38V227.32ZM389.935 525.94C355.775 525.94 327.775 515.02 305.935 493.18C284.095 471.06 273.175 441.8 273.175 405.4C273.175 369 283.955 340.02 305.515 318.46C327.355 296.9 355.495 286.12 389.935 286.12C424.375 286.12 452.935 296.76 475.615 318.04C498.295 339.32 509.635 368.86 509.635 406.66C509.635 414.78 509.075 422.34 507.955 429.34H346.675C348.075 439.7 352.695 448.24 360.535 454.96C368.375 461.4 376.775 464.62 385.735 464.62C394.975 464.62 401.835 463.78 406.315 462.1C410.795 460.14 414.015 458.32 415.975 456.64C418.215 454.68 421.015 451.6 424.375 447.4H502.075C495.355 470.92 481.915 489.96 461.755 504.52C441.595 518.8 417.655 525.94 389.935 525.94ZM434.875 384.4C433.755 373.48 428.995 364.66 420.595 357.94C412.195 350.94 402.255 347.44 390.775 347.44C379.295 347.44 369.635 350.94 361.795 357.94C353.955 364.66 349.055 373.48 347.095 384.4H434.875ZM696.466 449.5C705.986 439.42 710.746 424.86 710.746 405.82C710.746 386.78 705.846 372.36 696.046 362.56C686.246 352.48 674.626 347.44 661.186 347.44C647.746 347.44 636.126 352.48 626.326 362.56C616.806 372.36 612.046 386.78 612.046 405.82C612.046 424.86 616.946 439.42 626.746 449.5C636.826 459.58 648.586 464.62 662.026 464.62C675.466 464.62 686.946 459.58 696.466 449.5ZM574.246 492.76C550.726 470.64 538.966 441.52 538.966 405.4C538.966 369.28 550.726 340.44 574.246 318.88C597.766 297.04 626.886 286.12 661.606 286.12C696.326 286.12 725.306 297.04 748.546 318.88C772.066 340.44 783.826 369.28 783.826 405.4C783.826 441.52 772.206 470.64 748.966 492.76C725.726 514.88 696.746 525.94 662.026 525.94C627.306 525.94 598.046 514.88 574.246 492.76ZM901.98 288.64V323.08C916.82 298.44 940.48 286.12 972.96 286.12C999.84 286.12 1021.54 295.08 1038.06 313C1054.86 330.92 1063.26 355.28 1063.26 386.08V523H991.86V395.74C991.86 380.62 987.8 369 979.68 360.88C971.84 352.48 960.92 348.28 946.92 348.28C932.92 348.28 921.86 352.48 913.74 360.88C905.9 369 901.98 380.62 901.98 395.74V523H830.16V288.64H901.98Z" fill="url(#paint0_linear)"></path>
+              <path opacity="0.03" d="M1245 671.5H0V792H1920V0.5H1450C1392.01 0.5 1345 47.5101 1345 105.5V571.5C1345 626.728 1300.23 671.5 1245 671.5Z" fill="white"></path>
+              <circle cx="509" cy="121" r="18" fill="#12dd7e"></circle>
+              <circle cx="367.5" cy="138.5" r="9.5" fill="#12dd7e"></circle>
+              <circle cx="526.5" cy="431.5" r="6.5" fill="#12dd7e"></circle>
+              <defs>
+                <linearGradient id="paint0_linear" x1="-30.2098" y1="414" x2="1076.2" y2="412.898" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#12dd7e"></stop>
+                  <stop offset="1" stop-color="#12dd7e"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="">
+           
+            <div class="container">
+                <canvas id="blobContainer"></canvas>
+                <div class="row align-items-center justify-content-lg-between flex-md-row-reverse">
+                  <div class=" col-md-6 col-lg-5 col-sm-12  text-center">
+                    <h1 class="hero-title">Do More Tasks with Neon</h1>
+                    <div class="offset-xxs">
+                      <p class="biggest">Our app was designed to let you manage your time more effectively. Also, it is a great personal companion for every smartphone user.</p>
+                    </div>
+                    <div class="offset-sm">
+                      <button class="botn" data-modal-trigger="{&quot;target&quot;:&quot;#modal-login&quot;}">Start Using for Free</button>
+                    </div>
+                  </div>
+                  <div class=" col-md-6 col-lg-7  col-sm-12  hero-image">
+
+                  </div>
+                </div>
+              </div>
+       
+        </div>
+        </div>
+      </section> -->
+    <section class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="home-content">
+              <div class="bg-effect">
+                <img
+                  src="assets/images/home-bg.gif"
+                  class="img-fluid bg-gif"
+                  alt
+                />
+                <img
+                  src="assets/images/svg/1.png"
+                  class="img-fluid effect1 rotate-effect"
+                  alt
+                  style="transform: rotate(0deg)"
+                />
+                <img
+                  src="assets/images/svg/home-svg.svg"
+                  class="img-fluid effect2 rotate-effect"
+                  alt
+                  style="transform: rotate(0deg)"
+                />
+              </div>
+              <div>
+                <h1>
+                  India's No.1
+                  <div class="title-effect">
+                    <img src="assets/images/svg/title-effect.png" alt /><span
+                      style="font-family: Golden_Hopes"
+                      >World Class</span
+                    >
+                  </div>
+                  Neon Lights
+                </h1>
+
+                <a data-cursor="pointer" class="start-link mt-3"
+                  ><i class="iconsax" data-icon="play-circle"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M8.73999 12.2299V10.5599C8.73999 8.47988 10.21 7.62988 12.01 8.66988L13.46 9.50988L14.91 10.3499C16.71 11.3899 16.71 13.0899 14.91 14.1299L13.46 14.9699L12.01 15.8099C10.21 16.8499 8.73999 15.9999 8.73999 13.9199V12.2299Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg> </i
+                  >Start free trial</a
+                >
+              </div>
+            </div>
+            <div class="home-laptop px-md-0 px-3">
+              <div class="laptop-sec position-relative">
+                <div class="hand-sec">
+                  <img
+                    src="assets/images/svg/hand.png"
+                    class="img-fluid left-hand"
+                    alt="hand"
+                  />
+                  <img
+                    src="assets/images/svg/hand.png"
+                    class="img-fluid right-hand"
+                    alt="hand"
+                  />
+                  <img
+                    src="assets/images/svg/finger.png"
+                    class="img-fluid left-finger"
+                    alt="hand"
+                  />
+                  <img
+                    src="assets/images/svg/finger.png"
+                    class="img-fluid right-finger"
+                    alt="hand"
+                  />
+                </div>
+                <img
+                  src="assets/images/laptop.png"
+                  class="img-fluid laptop-img"
+                  alt="laptop"
+                  style="transform: rotateX(60deg)"
+                />
+              </div>
+              <div class="home-info">
+                <ul class="info-list list-unstyled">
+                  <li class="botn text-center">
+                    Customize Your Neon <i class="fa fa-arrow-right mx-2"></i>
+                  </li>
+                  <li class="botn text-center">
+                    Customize Your Idea <i class="fa fa-arrow-right mx-2"></i>
+                  </li>
+                </ul>
+                <ul class="star-rating list-unstyled">
+                  <li><i class="fa fa-star text-warning"></i></li>
+                  <li><i class="fa fa-star text-warning"></i></li>
+                  <li><i class="fa fa-star text-warning"></i></li>
+                  <li><i class="fa fa-star text-warning"></i></li>
+                  <li><i class="fa fa-star text-warning"></i></li>
+                </ul>
+                <h4>
+                  A technique to write all of your material 10 times more
+                  quickly.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cards  -->
+    <section class="card-section">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-md-4 col-lg-3 col-sm-12 ">
+            <div class="effect">
+              <div class="effect-img">
+                <img src="assets/images/stories/1.jpg" alt />
+                <div class="image-title"> <a href="#">
+                  Customize Neon 
+                </a>  <i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-12 ">
+            <div class="effect">
+              <div class="effect-img">
+                <img src="assets/images/stories/3.jpg" alt />
+                <div class="image-title"> <a href="#">
+               Customize FloRo
+                </a> <i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-12 ">
+            <div class="effect">
+              <div class="effect-img">
+                <img src="assets/images/stories/5.jpg" alt />
+                <div class="image-title"> <a href="#">
+                  Business Logo
+                </a> <i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-12 ">
+            <div class="effect">
+              <div class="effect-img">
+                <img src="assets/images/stories/6.jpg" alt />
+                <div class="image-title"> <a href="#">
+                  Best Seller
+                </a> <i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Settings
+      const updateRate = 100 / 40;
+      let lastTime = 0;
+      let elapsedTime = 0;
+
+      // Canvas setup
+      const canvas = document.getElementById("blobContainer");
+      const ctx = canvas.getContext("2d");
+      resizeCanvas();
+
+      // Calculate canvas dimensions
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      // FPS calculation
+      let fps = 0;
+      let accumulatedTime = 0;
+      let accumulatedFrames = 0;
+
+      // Circle properties
+      const numCircles = 10;
+      const circles = [];
+      const velocity = 1;
+      const size = Math.min(canvas.width, canvas.height) / 5;
+
+      // Initialize circles
+      function initializeCircles() {
+        for (let i = 0; i < numCircles; i++) {
+          const randSize = Math.random() * size + 2;
+
+          // Create a solid fill with the specified color
+          const solidFill = "#12dd7e";
+
+          circles.push({
+            size: randSize,
+            gradient: solidFill, // Use the solid fill instead of gradient
+            x: (Math.random() - 0.5) * canvas.width + canvas.width / 2,
+            y: (Math.random() - 0.5) * canvas.height + canvas.height / 2,
+            vx: (Math.random() - 0.5) * velocity * 1,
+            vy: (Math.random() - 0.5) * velocity * 1,
+          });
+        }
+      }
+
+      // Main loop
+      function main(timestamp) {
+        resizeCanvas();
+
+        accumulatedTime += timestamp - lastTime;
+        accumulatedFrames++;
+
+        elapsedTime += timestamp - lastTime;
+        lastTime = timestamp;
+
+        if (accumulatedTime >= 1000) {
+          fps = accumulatedFrames;
+          accumulatedFrames = 0;
+          accumulatedTime -= 1000;
+        }
+
+        while (elapsedTime >= updateRate) {
+          update();
+          elapsedTime -= updateRate;
+        }
+
+        render();
+        requestAnimationFrame(main);
+      }
+
+      // Update circle positions
+      function update() {
+        for (const circle of circles) {
+          circle.x += circle.vx;
+          circle.y += circle.vy;
+
+          // Horizontal Boundaries
+          if (
+            circle.x <= circle.size ||
+            circle.x >= canvas.width - circle.size
+          ) {
+            circle.vx *= -1;
+            circle.x =
+              circle.x <= circle.size
+                ? circle.size
+                : canvas.width - circle.size;
+          }
+
+          //Vertical Boundaries
+          if (
+            circle.y <= circle.size ||
+            circle.y >= canvas.height - circle.size
+          ) {
+            circle.vy *= -1;
+            circle.y =
+              circle.y <= circle.size
+                ? circle.size
+                : canvas.height - circle.size;
+          }
+        }
+      }
+
+      // Render circles
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (const circle of circles) {
+          ctx.fillStyle = circle.gradient; // Use the solid fill
+          ctx.beginPath();
+          ctx.arc(circle.x, circle.y, circle.size, 0, 2 * Math.PI);
+          ctx.fill();
+        }
+      }
+
+      // Initialize and start
+      initializeCircles();
+      requestAnimationFrame(main);
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/components/header.js"></script>
+    <script src="assets/js/header-animation.js"></script>
     <script src="assets/components/story.js"></script>
     <script src="assets/js/font-awesome.js"></script>
     <script src="assets/js/main.js"></script>
