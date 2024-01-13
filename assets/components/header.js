@@ -49,11 +49,15 @@ class MyHeader extends HTMLElement {
 <div class="container-fluid bg-light">
   <div class="container px-0">
       <nav class="navbar navbar-light navbar-expand-xl">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand magnet">
               <h1 class="text-primary display-4">Neon</h1>
           </a>
-          <button class="navbar-toggler py-2 px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
-              <span class="fa fa-bars text-primary"></span>
+          <button class="navbar-toggler navbar__toggle  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+          <div class="navbar__toggle__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
           </button>
           <div class="navbar-collapse bg-light py-3 collapse" id="navbarCollapse" >
               <div class="navbar-nav mx-auto border-top">
