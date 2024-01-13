@@ -206,122 +206,98 @@ closeCart.onclick = () => {
 
 //   document.getElementsByClassName("total-price")[0].innerText = "$" + total;
 // }
-const swiperTestmonials = new Swiper(".swiper-testmonials", {
-  loop: true,
-  slidesPerView: 1.2,
-  grabCursor: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-testmonials-next",
-    prevEl: ".swiper-button-testmonials-prev",
-  },
-  breakpoints: {
-    // when window width is >= 640px
-    500: {
-      slidesPerView: 1.4,
-    },
-    780: {
-      slidesPerView: 1.8,
-    },
-    1300: {
-      slidesPerView: 2.6,
-    },
-    1630: {
-      slidesPerView: 3.2,
-    },
-  },
+const postActionsControllers = document.querySelectorAll(
+  ".post-actions-controller"
+);
+
+// When post action controllers are clicked, the action content is opened and closed
+
+postActionsControllers.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const targetId = btn.getAttribute("data-target");
+    const postActionsContent = document.getElementById(targetId);
+
+    if (postActionsContent) {
+      const isVisible = postActionsContent.getAttribute("data-visible");
+
+      if (isVisible === "false") {
+        postActionsContent.setAttribute("data-visible", "true");
+        postActionsContent.setAttribute("aria-hidden", "false");
+        btn.setAttribute("aria-expanded", "true");
+      } else {
+        postActionsContent.setAttribute("data-visible", "false");
+        postActionsContent.setAttribute("aria-hidden", "true");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    }
+  });
 });
+
+// If the action content is opened, it is closed by clicking outside of it
+
+function handleClickOutside(event) {
+  postActionsControllers.forEach((btn) => {
+    const targetId = btn.getAttribute("data-target");
+    const postActionsContent = document.getElementById(targetId);
+
+    if (
+      postActionsContent &&
+      postActionsContent.getAttribute("data-visible") === "true"
+    ) {
+      if (!postActionsContent.contains(event.target) && event.target !== btn) {
+        postActionsContent.setAttribute("data-visible", "false");
+        postActionsContent.setAttribute("aria-hidden", "true");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    }
+  });
+}
+
+document.addEventListener("click", handleClickOutside);
+
+postActionsControllers.forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+});
+
+const likeBtns = document.querySelectorAll(".post-like");
+
+// When the like buttons are clicked, they are colored red or this action is undone
+
+likeBtns.forEach((likeBtn) => {
+  likeBtn.addEventListener("click", () => {
+    if (likeBtn.classList.contains("active")) {
+      likeBtn.classList.remove("active");
+    } else {
+      likeBtn.classList.add("active");
+    }
+  });
+});
+
+// Swiper
 
 var swiper = new Swiper(".swiper", {
   grabCursor: true,
-  speed: 500,
-  effect: "fade",
-  loop: true,
-  clickable: true,
+  speed: 400,
   mousewheel: {
-    invert: false,
-    sensitivity: 1,
+    invert: true,
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 });
-
-swiper.enable();
-
-// Sidebars
-
-const moreBtns = document.querySelectorAll(".more-btn");
-const closeBtns = document.querySelectorAll(".close-btn-2");
-const boxContainers = document.querySelectorAll(".box-container");
-const body = document.querySelector("body");
-const mobileBoxes = document.querySelectorAll(".box-mobile");
-
-moreBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    let modal = btn.getAttribute("data-modal");
-    document.getElementById(modal).style.display = "block";
-    body.classList.add("prevent-background-scroll");
-    boxContainers.forEach((container) => {
-      container.style.display = "none";
-    });
-  });
-});
-
-closeBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    let modal = (btn.closest(".sidebar").style.display = "none");
-    body.classList.remove("prevent-background-scroll");
-    boxContainers.forEach((container) => {
-      container.style.display = "grid";
-    });
-  });
-});
-
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("sidebar")) {
-    e.target.style.display = "none";
-    body.classList.remove("prevent-background-scroll");
-    boxContainers.forEach((container) => {
-      container.style.display = "grid";
-    });
-  }
-});
-
-mobileBoxes.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    let modal = btn.getAttribute("data-modal");
-    document.getElementById(modal).style.display = "block";
-    body.classList.add("prevent-background-scroll");
-    boxContainers.forEach((container) => {
-      container.style.display = "none";
-    });
-  });
-});
-
-// Audio
-
-const audio = document.getElementById("background-music");
-const playPauseButton = document.getElementById("play-pause-button");
-const playIcon = document.getElementById("play-music");
-const pauseIcon = document.getElementById("pause-music");
-
-let isPlaying = false;
-
-function togglePlayPause() {
-  if (isPlaying) {
-    audio.pause();
-    playIcon.classList.remove("hidden");
-    pauseIcon.classList.add("hidden");
-  } else {
-    audio.play();
-    playIcon.classList.add("hidden");
-    pauseIcon.classList.remove("hidden");
-  }
-  isPlaying = !isPlaying;
-}
-
-// Add an event listener for when the music ends
-audio.addEventListener("ended", function () {
-  audio.currentTime = 0;
-  audio.play();
-});
-
-playPauseButton.addEventListener("click", togglePlayPause);

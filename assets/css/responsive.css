@@ -47,7 +47,22 @@
   font-size: 13px;
   /* font-weight: 700; */
 }
-
+.home-section .home-laptop .home-info .info-list li {
+  font-size: 12px !important;
+  margin-top: 12px;
+}
+.botn {
+  line-height: 1.2;
+}
+.card-section {
+  padding: 50px 0px !important;
+}
+.effect .effect-img video {
+  height: 400px !important;
+}
+.effect .effect-img img {
+  height: 400px !important;
+}
 }
 
 @media (max-width: 360px) {

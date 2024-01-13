@@ -100,12 +100,11 @@ class MyHero extends HTMLElement {
             </div>
             <div class="home-info">
               <ul class="info-list list-unstyled">
-                <li class="botn text-center start-link" data-cursor="pointer" >
-                  Customize Your Neon <i class="fa fa-arrow-right mx-2"></i>
-                </li>
-                <li class="botn text-center start-link" data-cursor="pointer" >
-                  Customize Your Idea <i class="fa fa-arrow-right mx-2"></i>
-                </li>
+              <div class="linkWrap text-center">
+              <a href="#" class="cta style-9">
+                <span class="text-white">Customize Neon</span>
+              </a>
+            </div>
               </ul>
               <ul class="star-rating list-unstyled">
                 <li><i class="fa fa-star text-warning"></i></li>
