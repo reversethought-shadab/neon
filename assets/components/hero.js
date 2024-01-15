@@ -102,21 +102,11 @@ class MyHero extends HTMLElement {
               <ul class="info-list list-unstyled">
               <div class="linkWrap text-center">
               <a href="#" class="cta style-9">
-                <span class="text-white">Customize Neon</span>
+                <span class="text-dark">Customize Neon</span>
               </a>
             </div>
               </ul>
-              <ul class="star-rating list-unstyled">
-                <li><i class="fa fa-star text-warning"></i></li>
-                <li><i class="fa fa-star text-warning"></i></li>
-                <li><i class="fa fa-star text-warning"></i></li>
-                <li><i class="fa fa-star text-warning"></i></li>
-                <li><i class="fa fa-star text-warning"></i></li>
-              </ul>
-              <h4>
-                A technique to write all of your material 10 times more
-                quickly.
-              </h4>
+             
             </div>
           </div>
         </div>
