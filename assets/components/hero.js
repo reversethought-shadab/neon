@@ -101,7 +101,7 @@ class MyHero extends HTMLElement {
             <div class="home-info">
               <ul class="info-list list-unstyled">
               <div class="linkWrap text-center">
-              <a href="#" class="cta style-9">
+              <a href="customize-neon.html" class="cta style-9">
                 <span class="text-dark">Customize Neon</span>
               </a>
             </div>
