@@ -1,0 +1,177 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Testimonials Grid Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   
+
+
+.container {
+  margin-top: 50px;
+}
+.container .testimonial-wrapper {
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.container .testimonial-wrapper:hover {
+  margin-top: -3px;
+}
+.container .testimonial-wrapper .testimonial {
+  background: #042E3A;
+  border-radius: 4px;
+  border: 2px solid #F9B518;
+  padding: 20px;
+}
+.container .testimonial-wrapper .testimonial .quote {
+  font-size: 1rem;
+  color: #f2f2f2;
+  z-index: 1;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 400;
+}
+.container .testimonial-wrapper .testimonial .attribution {
+  color: #d78118;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding-top: 15px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+#loadMore {
+    background: linear-gradient(112.84deg, #FFB919 23.08%, #FFCF63 107.71%);
+    color: #042E3A;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    border: 1p solid linear-gradient(112.84deg, #FFB919 23.08%, #FFCF63 107.71%);
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  transition: .3s;
+}
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+.section-title {
+    padding-bottom: 40px;
+}
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5c8eb0;
+    font-family: "Poppins", sans-serif;
+}
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ff8664;
+    margin: 4px 10px;
+}
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #263d4d;
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-title">
+            <h2>Client Tale</h2>
+            <p>Client Talks</p>
+          </div>
+        <div class="columns has-text-centered is-multiline">
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+            <div class="column is-4 testimonial-wrapper">
+                <div class="testimonial">
+                    <p class="quote"> "I've been using your cinematics in my montages for ages! Awesome stuff man and thank you!"</p>
+                    <p class="attribution">- QuakeV</p>
+                </div>
+            </div>
+    
+        </div>
+        <a href="#" id="loadMore">Load More</a>
+    </div>
+ 
+  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script>
+    $(document).ready(function () {
+      // Hide all testimonials initially
+      $(".testimonial-wrapper").hide();
+    
+      // Show the first three testimonials with animation
+      $(".testimonial-wrapper").slice(0, 3).slideDown(800);
+    
+      $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        const hiddenTestimonials = $(".testimonial-wrapper:hidden").slice(0, 3);
+    
+        // Use slideDown with a longer duration for a smoother animation
+        hiddenTestimonials.slideDown(800);
+    
+        if (hiddenTestimonials.length === 0) {
+          $("#loadMore").text("No Content").addClass("noContent");
+        }
+      });
+    });
+    </script>
+    
+    
+</html>

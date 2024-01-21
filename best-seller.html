@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/customize.css" />
+    <link rel="stylesheet" href="assets/css/whatwedo.css" />
+    <link rel="stylesheet" href="assets/css/story.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    @font-face {
+      font-family: Eurostile_Extended;
+      src: url(../fonts/eurostile_extended_black.ttf);
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap");
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
+    <!-- top header  -->
+
+    <my-header></my-header>
+
+    <!-- breadcrumb ==== -->
+    <section style="background-color: #212529">
+      <div class="container py-2">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="https://www.trusthavensolution.com">
+                <svg
+                  width="23"
+                  class="red"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8.94369L10.0675 1.51755C10.9101 0.827482 12.0899 0.827482 12.9325 1.51755L22 8.94369M4.5 6.07724V17.543C4.5 18.9 5.54467 20 6.83333 20H8H15H16.1667C17.4553 20 18.5 18.9 18.5 17.543V1.57281M9.16667 20V12.6291C9.16667 11.9507 9.689 11.4006 10.3333 11.4006H12.6667C13.311 11.4006 13.8333 11.9507 13.8333 12.6291V20"
+                    stroke="#12dd7e"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Shop Neon
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Best Seller
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- shop section  -->
+    <section class="best-seller page-section">
+      <div class="container">
+        <div class="">
+          <h1
+            class="section-title"
+            style="color: #000; font-family: Eurostile_Extended"
+          >
+            Shop All
+          </h1>
+          <div
+            class="filter_choice_top d_f d-flex justify-content-between my-4 animaction_top"
+            data-scroll="in"
+          >
+            <div class="filter_one">
+              <p class="para d_f d-flex">
+                <span class="small--hide"
+                  ><img
+                    src="assets/images/svg/filter_one_png.png"
+                    loading="lazy"
+                  /><span>Filter :</span></span
+                >
+                <select
+                  class="form-control filters-toolbar__input custom_dropdown dropdown-border"
+                  name="FilterTags"
+                  id="FilterTags"
+                  aria-describedby="a11y-refresh-page-message a11y-selection-message"
+                  style="width: 154px"
+                >
+                  <option value="/collections/all">All products</option>
+
+                  <option value="">all</option>
+
+                  <option value="">Baby Shower</option>
+
+                  <option value="">Bar</option>
+
+                  <option value="">Bed Room</option>
+
+                  <option value="">Best Seller</option>
+
+                  <option value="">bestseller</option>
+
+                  <option value="">Birthday</option>
+
+                  <option value="">Budget</option>
+
+                  <option value="">Cafe</option>
+
+                  <option value="">Club</option>
+
+                  <option value="">dup-review-publication</option>
+
+                  <option value="">Featured</option>
+
+                  <option value="">Gaming Room</option>
+
+                  <option value="">Gym</option>
+
+                  <option value="e">home</option>
+
+                  <option value="">Home Bar</option>
+
+                  <option value="">Home Bars</option>
+
+                  <option value="">Home Office</option>
+                </select>
+              </p>
+            </div>
+            <div class="filter_one filter_two">
+              <p class="para d_f d-flex">
+                <span class="small--hide"
+                  ><img
+                    src="assets/images/svg/filter_two_png.png"
+                    loading="lazy"
+                  /><span>Sort By :</span></span
+                >
+                <select
+                  name="sort_by"
+                  id="SortBy"
+                  class="form-control filters-toolbar__input dropdown-border"
+                  aria-describedby="a11y-refresh-page-message a11y-selection-message"
+                  data-default-sortby="manual"
+                  style="width: 131px"
+                >
+                  <option value="manual" selected="selected">Featured</option>
+                  <option value="best-selling">Best selling</option>
+                  <option value="title-ascending">Alphabetically, A-Z</option>
+                  <option value="title-descending">Alphabetically, Z-A</option>
+                  <option value="price-ascending">Price, low to high</option>
+                  <option value="price-descending">Price, high to low</option>
+                  <option value="created-ascending">Date, old to new</option>
+                  <option value="created-descending">Date, new to old</option>
+                </select>
+              </p>
+            </div>
+            <div class="filter_three small--hide">
+              <p class="para">Showing 2073 results</p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="swiper-slide post">
+              <img
+                class="post-img"
+                src="assets/images/happy.avif"
+                alt="vibez"
+              />
+
+              <div class="post-body">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    class="post-avatar"
+                    src="assets/images/svg/button-arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+                <div class="post-detail">
+                  <h2 class="post-name">This is our happy place neon sign</h2>
+                  <p class="post-author">
+                    ₹8,499
+                    <span style="text-decoration: line-through">₹ 10,000</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="loadMore" id="loadMore">Load More</a>
+      </div>
+    </section>
+    <!-- details section  -->
+    <section class="page-section">
+      <div
+        class="container section-New-NewAttack-shop_collection_desc_main-padding"
+      >
+        <div class="shop_collection_desc_box">
+          <div
+            class="shop_collection_desc_flex d-flex d_f animaction_top"
+            data-scroll="in"
+          >
+            <div class="shop_collection_desc_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="56"
+                viewBox="0 0 34 56"
+                fill="none"
+              >
+                <path
+                  d="M21.5 1L2 30.5H11L10 52.5L31.5 21.5C31.5 21.5 28.5 21.5 21.5 21.5"
+                  stroke="#9800FA"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+            <div class="shop_collection_desc_content">
+              <h2>Pick the perfect sign for your space</h2>
+
+              <p>
+                Cool neon signs that are not just handcrafted but segregated
+                according to your requirements! Neon Attack's amazing neon signs
+                help you add a touch of colour to your own space while
+                brightening it at the same time.<br /><br />These neon signs for
+                home or your business space, come with an acrylic backing and a
+                fine-crafted LED neon tubing. Our team of specialists work hard
+                to create the neon glow signs that you simply fall in love with.
+                When the best technology meets talented individuals from Neon
+                Attack, magic is created<br />
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="shop_collection_desc_flex d-flex d_f animaction_top"
+            data-scroll="in"
+          >
+            <div class="shop_collection_desc_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="56"
+                viewBox="0 0 34 56"
+                fill="none"
+              >
+                <path
+                  d="M21.5 1L2 30.5H11L10 52.5L31.5 21.5C31.5 21.5 28.5 21.5 21.5 21.5"
+                  stroke="#9800FA"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+            <div class="shop_collection_desc_content">
+              <h2>Fine-crafted and neon-lighted signs</h2>
+
+              <p>
+                Your neon glow signs not only look amazing but are one of a kind
+                just like you! Each of the best neon signs by Neon Attack comes
+                with an additional brightness control remote that you can get.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="shop_collection_desc_flex d-flex d_f animaction_top"
+            data-scroll="in"
+          >
+            <div class="shop_collection_desc_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="56"
+                viewBox="0 0 34 56"
+                fill="none"
+              >
+                <path
+                  d="M21.5 1L2 30.5H11L10 52.5L31.5 21.5C31.5 21.5 28.5 21.5 21.5 21.5"
+                  stroke="#9800FA"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+            <div class="shop_collection_desc_content">
+              <h2>FloRo neon sign collection</h2>
+
+              <p>
+                Now, you can also buy neon signs by FloRo. With the FloRo signs,
+                you don’t have to worry about picking a colour. All you gotta do
+                is simply select a design, size, and enjoy the benefits of 200+
+                flow modes and countless colour-changing options.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="shop_collection_desc_flex d-flex d_f animaction_top"
+            data-scroll="in"
+          >
+            <div class="shop_collection_desc_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="56"
+                viewBox="0 0 34 56"
+                fill="none"
+              >
+                <path
+                  d="M21.5 1L2 30.5H11L10 52.5L31.5 21.5C31.5 21.5 28.5 21.5 21.5 21.5"
+                  stroke="#9800FA"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+            <div class="shop_collection_desc_content">
+              <h2>No. 1 Neon Signs in India</h2>
+
+              <p>
+                Our neon signs are anything but your traditional neon signs for
+                home. With unique and trendy designs, you can feel free to pick
+                and choose any and every design and aesthetic that catches your
+                eye. Our amazing product quality and speedy delivery make us one
+                of the best neon sign makers in the country.<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- faq here if needed -->
+<section class="faq-section page-section">
+    <div class="container">
+        <div class="title-basic">
+            <h2 class="head-title text-dark ">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus hic quia saepe harum, odio accusamus temporibus dolorum sint perferendis enim. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                       Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                       Lorem ipsum dolor sit amet consectetur.
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- faq here if needed -->
+    <my-footer></my-footer>
+    <script>
+      $(document).ready(function () {
+        $(".post").hide();
+        $(".post").slice(0, 4).slideDown(800);
+
+        $(".loadMore").on("click", function (e) {
+          e.preventDefault();
+          const hiddenTestimonials = $(".post:hidden").slice(0, 4);
+          hiddenTestimonials.slideDown(800);
+
+          if (hiddenTestimonials.length === 0) {
+            $(".loadMore").text("No Content").addClass("noContent");
+          }
+        });
+      });
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/font-awesome.js"></script>
+    <script src="assets/components/header.js"></script>
+    <script src="assets/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/components/story.js"></script>
+  </body>
+</html>

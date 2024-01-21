@@ -44,3 +44,25 @@ function activateColor(event) {
     document.getElementById("Preview-text").style.color = selectedColor;
   }
 }
+
+$(document).ready(function () {
+  // Hide all testimonials initially
+  $(".card-rating").hide();
+
+  // Show the first three testimonials with animation
+  $(".card-rating").slice(0, 3).slideDown(800);
+
+  $("#loadMore").on("click", function (e) {
+    e.preventDefault();
+    const hiddenTestimonials = $(".card-rating:hidden").slice(0, 3);
+
+    // Use slideDown with a longer duration for a smoother animation
+    hiddenTestimonials.slideDown(800);
+
+    if (hiddenTestimonials.length === 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+});
+
+// review section
