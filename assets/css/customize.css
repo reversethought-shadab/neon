@@ -1240,7 +1240,6 @@ pointer-events: none;
 .rating {
   display: inline-block;
   unicode-bidi: bidi-override;
-  direction: rtl;
 }
 
 .rating input {
