@@ -223,3 +223,37 @@ $(".owl-carousel.version-2").owlCarousel({
     },
   },
 });
+/*-------------------
+		Quantity change
+	--------------------- */
+function updateQuantity(delta) {
+  var quantityInput = document.querySelector(".quantity-amount");
+  var currentValue = parseInt(quantityInput.value, 10) || 0;
+  var newValue = Math.max(1, currentValue + delta);
+  quantityInput.value = newValue;
+}
+function removeRow(element) {
+  var row = element.closest("tr");
+  row.remove();
+
+  var table = document.querySelector(".table tbody");
+  var tableHead = document.querySelector(".table thead");
+  var entire = document.getElementById("remove-item");
+  var cartContainer = document.getElementById("cartContainer");
+
+  if (table.children.length === 0) {
+    // If the tbody is empty, hide .table and display "Your Cart Is Empty" text and the button in cartContainer
+    table.style.display = "none";
+    entire.style.display = "none";
+    tableHead.style.display = "none";
+    cartContainer.innerHTML = `
+      <div class="text-center align-items-center">
+        <p>Your Cart Is Empty</p>
+        <div class="linkWrap text-center">
+          <a href="best-seller.html" class="cta style-9">
+            <span>Continue Shopping</span>
+          </a>
+        </div>
+      </div>`;
+  }
+}

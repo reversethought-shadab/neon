@@ -86,6 +86,9 @@
 .shop_collection_desc_content p {
   margin-bottom: 32px !important;
 }
+.product-price{
+  display: none !important;
+}
 }
 
 @media (max-width: 400px) {
