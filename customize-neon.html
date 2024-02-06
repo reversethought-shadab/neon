@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
     <link
       href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
       rel="stylesheet" type="text/css" />
@@ -39,7 +35,24 @@
     <my-header></my-header>
 
     <!-- breadcrumb ==== -->
-    <my-breadcrumb></my-breadcrumb>
+   <section  style="background-color: #212529;">
+     <div class="container py-2 ">
+       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+         <ol class="breadcrumb">
+             <li class="breadcrumb-item">
+                 <a href="index.html">
+                     <svg width="23" class="red" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M1 8.94369L10.0675 1.51755C10.9101 0.827482 12.0899 0.827482 12.9325 1.51755L22 8.94369M4.5 6.07724V17.543C4.5 18.9 5.54467 20 6.83333 20H8H15H16.1667C17.4553 20 18.5 18.9 18.5 17.543V1.57281M9.16667 20V12.6291C9.16667 11.9507 9.689 11.4006 10.3333 11.4006H12.6667C13.311 11.4006 13.8333 11.9507 13.8333 12.6291V20" stroke="#12dd7e" stroke-width="1.5" stroke-linecap="round"></path>
+                     </svg>
+                 </a>
+             </li>
+             <li class="breadcrumb-item  active" aria-current="page">Customize</li>
+             <li class="breadcrumb-item active" aria-current="page">Customize Neon</li>
+         </ol>
+     </nav>
+     </div>
+   </section>
+   
     <!-- story  -->
     <my-story></my-story>
 
@@ -199,7 +212,7 @@
           <div class="whatsapp_txt_wrap">
             <p>
               Have your own logo or design?
-              <a target="_blank" href="api+number&amp;text=I need help in customising my neon sign." aria-describedby="a11y-new-window-external-message" rel="noopener">Click Here</a>
+              <a target="_blank" href="api+number&amp;text=I need help in customising my neon sign." aria-describedby="a11y-new-window-external-message" rel="noopener"> Click Here <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg></a>
             </p>
           </div>
           <div class="offers--sale">
@@ -207,6 +220,7 @@
           </div>
         </div>
       </div>
+        </div>
         </div>
       </section>
       <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -229,6 +243,553 @@
           </div>
         </div>
       </div>
+
+      <!-- nav and tabs  -->
+      <section class="tabss">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-tabs d-flex justify-content-lg-around nav-fill " id="myTab" role="tablist">
+              <li class="nav-item nav-link active" role="presentation" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Why Choose Neon Attack?
+              </li>
+              <li class="nav-item nav-link " role="presentation" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"  role="tab" aria-controls="profile-tab-pane" aria-selected="false">About Your Neon Sign
+              </li>
+              <li class="nav-item nav-link " role="presentation" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"  role="tab" aria-controls="contact-tab-pane" aria-selected="false">How To Install?
+              </li>
+             
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="product-wrapper">
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/premium.svg" class=" svg-card side img-fluid" alt="">
+                      <h4 class="title-card">Premium <br> quality</h4>
+                    </div>
+                     <p class="  text_reg">
+                      The best quality materials used to create the perfect sign for you.
+                     </p> 
+                  </div>
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/warunty.svg" class=" svg-card  side img-fluid" alt="">
+                      <h4 class="title-card">Two Year<br>warranty</h4>
+                    </div>
+                     <p class="  text_reg">
+                      Replacement or fixing facility in case of damage during transit or usage.
+                     </p> 
+                  </div>
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/world-class.svg" class=" svg-card side img-fluid" alt="">
+                      <h4 class="title-card">World-class <br> Craftsmanship</h4>
+                    </div>
+                     <p class="  text_reg">
+                      Each sign is handmade on order by highly trained neon sign artisans.
+                     </p> 
+                  </div>
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/customer.svg" class=" svg-card side img-fluid" alt="">
+                      <h4 class="title-card"> 100% Customer <br> Satisfaction rate</h4>
+                    </div>
+                     <p class="  text_reg">
+                      Rated with more than 1000+ 5-star reviews from our beloved customers.
+                     </p> 
+                  </div>
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/power.svg" class=" svg-card side img-fluid" alt="">
+                      <h4 class="title-card"> Power <br> efficient</h4>
+                    </div>
+                     <p class="  text_reg">
+                      80% less power consumption than traditional glass neon signs.
+                     </p> 
+                  </div>
+                  <div class="product-item">
+                    <div class="head-card d-flex justify-content-around align-items-center">
+                      <img src="assets/images/svg/shipping.svg" class=" svg-card side img-fluid" alt="">
+                      <h4 class="title-card">Free +<br> Fast shipping</h4>
+                    </div>
+                     <p class="  text_reg">
+                      Free shipping on all standard delivery orders irrespective of amount.
+                     </p> 
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="products_detail">
+                  <!--               <h4 class="text_xl">About your neon sign</h4> -->
+                                <p class="text_reg">Neon Attack's neon signs are made with advanced LED tubing that allows
+                                  them to be lightweight and flexible enough to be moulded into any design or shape.
+                                  The transparent acrylic backing is made with premium 6MM material.</p>
+                                <div class="about_box">
+                                  <div class="new-box">
+                                    <div class="box_img">
+                                      <img width="100%" height="100%" data-src="assets/images/svg/about_icon_1.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/about_icon_1.avif">
+                                    </div>
+                                    <div class="box_text">
+                                      <p class="text_md">Weight</p>
+                                      <p class="text_reg">5-12 kg</p>
+                                    </div>
+                                  </div>
+                                  <div class="new-box">
+                                    <div class="box_img">
+                                      <img width="100%" height="100%" data-src="assets/images/svg/about_icon_3.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/about_icon_3.avif">
+                                    </div>
+                                    <div class="box_text">
+                                      <p class="text_md">Power usage</p>
+                                      <p class="text_reg">12 volts DC</p>
+                                    </div>
+                                  </div>
+                                  <div class="new-box">
+                                    <div class="box_img">
+                                      <img width="100%" height="100%" data-src="assets/images/svg/about_icon_2.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/about_icon_2.avif">
+                                    </div>
+                                    <div class="box_text border0">
+                                      <p class="text_md">Estimated usage</p>
+                                      <p class="text_reg">50,000 hours</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                   <p></p>
+                                   <p></p>
+                                <h4 class="text_xl">What's in the kit?</h4>
+                                <p class="text_reg">Our sign is made to enjoy straight from the box!</p>
+                                <p class="text_reg">Every neon sign is mounted on clear acrylic for support and comes attached with
+                                  a power cord that is to be attached to the power adaptor. The acrylic board has pre-drilled holes
+                                  with SS mounting screws that allow you to hang it on your wall with ease.</p>
+                                <img width="100%" height="100%" data-src="assets/images/svg/create.webp" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/create.webp">
+                             
+                              </div>
+              </div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="products_detail">
+                  <h4 class="text_xl">Here's how you can install our neon signs on your wall:</h4>
+                  <div class="guide">
+                    <div class="new-box">
+                      <div class="box_img">
+                        <img width="100%" height="100%" data-src="assets/images/svg/guide_1.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/guide_1.avif">
+                      </div>
+                      <div class="box_text">
+                        <p class="text_md">Take a measuring tape and mark
+                          out the position of your neon sign. </p>
+                      </div>
+                    </div>
+                    <div class="new-box">
+                      <div class="box_img">
+                        <img width="100%" height="100%" data-src="assets/images/svg/guide_2.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/guide_2.avif">
+                      </div>
+                      <div class="box_text">
+                        <p class="text_md">Drill small holes on the wall.</p>
+                      </div>
+                    </div>
+                    <div class="new-box">
+                      <div class="box_img">
+                        <img width="100%" height="100%" data-src="assets/images/svg/guide_3.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/guide_3.avif">
+                      </div>
+                      <div class="box_text">
+                        <p class="text_md">Use the SS mounting screws to mount
+                          your neon sign on the wall.</p>
+                      </div>
+                    </div>
+                    <div class="new-box">
+                      <div class="box_img">
+                        <img width="100%" height="100%" data-src="assets/images/svg/guide_4.avif" alt="weight" class="img-responsive lazyloaded" src="assets/images/svg/guide_4.avif">
+                      </div>
+                      <div class="box_text">
+                        <p class="text_md">Connect the power adapter to the
+                          transparent cable and your sign is ready! </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- review area  -->
+<section class="customer-review">
+  <div class="container border-bottom ">
+    <div class="row align-items-center"  >
+      <div class="col-md-3  col-rev">
+        <div class="star-rating d-flex" >
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p class="total-star text-white">
+          Based on 93 review
+        </p>
+      </div>
+      <div class="col-md-3 col-rev">
+        <div class="rating-bars">
+          <div class="bar">
+            <div class="info">
+              <span class="d-flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+            </div>
+            <div class="progress-line five">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span class="d-flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+            </div>
+            <div class="progress-line four">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span class="d-flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+            </div>
+            <div class="progress-line three">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span class="d-flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+            </div>
+            <div class="progress-line two">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span class="d-flex">
+                <i class="fa fa-star"></i>
+              </span>
+            </div>
+            <div class="progress-line one">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-rev">
+        <div class="gallary position-relative">
+          <img src="assets/images/stories/1.jpg" />
+          <img src="assets/images/stories/2.jpg" />
+          <img src="assets/images/stories/3.jpg" />
+          <img src="assets/images/stories/4.jpg" />
+          <img src="assets/images/stories/5.jpg" />
+      <img src="assets/images/stories/6.jpg" />
+        </div>
+        <a href="" class="click-image d-flex justify-content-center" type="button" data-bs-toggle="modal" data-bs-target="#myGallaryModal">See all </a>
+      </div>
+      <div class="modal" id="myGallaryModal">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <!-- <h4 class="modal-title">Modal Heading</h4> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h1 class="text-center align-items-center">Show Here gallary Slider Dynamic</h1>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3 col-rev">
+        <button  class="form-popup" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Write a review</button>
+      </div>
+     
+    </div>
+    <div class="collection-sort py-3">
+      <label class="text-white">Filter by:</label>
+      <select>
+        <option value="/" selected>Most recent</option>
+		      <option value="/">Highest rating</option>
+		      <option value="/">Lowest rating</option>
+		      <option value="/">Only Picture</option>
+		      <option value="/">Video first</option>
+		      <option value="/">Photo first</option>
+		      <option value="/">Most helpful</option>
+		      
+      </select>
+    </div>
+  </div>
+  <div class="review-container container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-rating">
+          <img class="card-img-top" src="assets/images/stories/6.jpg">
+          <div class="card-block">
+           
+            <h4 class="card-title mt-3">Shadab</h4>
+            <div class="star-rate">
+             
+            </div>
+            <div class="review-title">
+              
+            </div>
+            <div class="card-text">
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+            </div>
+          </div>
+          <div class="card-footer">
+            <small>Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-rating">
+          <img class="card-img-top" src="assets/images/stories/3.jpg">
+          <div class="card-block">
+           
+            <h4 class="card-title mt-3">Shadab</h4>
+            <div class="star-rate">
+             
+            </div>
+            <div class="review-title">
+              
+            </div>
+            <div class="card-text">
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+            </div>
+          </div>
+          <div class="card-footer">
+            <small>Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-rating">
+          <div class="card-block">
+            <h4 class="card-title mt-3">Shadab</h4>
+            <div class="star-rate">
+             
+            </div>
+            <div class="review-title">
+
+            </div>
+            <div class="card-text">
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, a?
+            </div>
+          </div>
+          <div class="card-footer">
+            <small>Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="loadMore">Load More</a>
+  </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Review</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container ">
+          <form id="reviewForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              
+              <div class="rating d-flex">
+                <input type="radio" name="rating" id="rating-1">
+                <label for="rating-1"></label>
+                <input type="radio" name="rating" id="rating-2">
+                <label for="rating-2"></label>
+                <input type="radio" name="rating" id="rating-3">
+                <label for="rating-3"></label>
+                <input type="radio" name="rating" id="rating-4">
+                <label for="rating-4"></label>
+                <input type="radio" name="rating" id="rating-5">
+                <label for="rating-5"></label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="reviewTitle" class="form-label">Review Title</label>
+              <input type="text" class="form-control" id="reviewTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="reviewTextarea" class="form-label">Review</label>
+              <textarea class="form-control txta" id="reviewTextarea" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="picture" class="form-label">Upload Picture [optional]</label>
+              <div class="input-group">
+                <input type="file" class="form-control" id="picture" accept="image/*">
+                <span class="input-group-text"><i class="fas fa-camera"></i></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="video" class="form-label">Upload Video [optional]</label>
+              <div class="input-group">
+                <input type="file" class="form-control" id="video" accept="video/*">
+                <span class="input-group-text"><i class="fas fa-video"></i></span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitReviewBtn">Submit Review</button>
+          </form>
+        </div>
+        
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- faq section  -->
+<section class="faq-section page-section">
+  <div class="container">
+      <div class="title-basic">
+          <h2 class="head-title text-dark ">Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                      Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+                  <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus hic quia saepe harum, odio accusamus temporibus dolorum sint perferendis enim. </p>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                     Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                     Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- treding search  -->
+<div class=" overflow-hidden" >  
+   
+  <div class="pt-40 pb-40 pt-md-0 pb-md-0">
+  
+      <!-- Marquee Text Line -->
+      <div class="marquee marquee-style-3 mb-30 mb-md-0 z-index-1" id="search">
+
+          <div class="marquee-track marquee-animation-1a">
+              <div>Living Room Neon Sign</div>
+              <div aria-hidden="true">Best Neon Lights</div>
+              <div aria-hidden="true">Best Neon Lights Online</div>
+              <div aria-hidden="true">Best Neon Sign Online</div>
+              <div aria-hidden="true">Best Neon Sign</div>
+              <div aria-hidden="true">Best Neon Lights</div>
+              <div aria-hidden="true">Neon Signs Online</div>
+              <div aria-hidden="true">Neon Lights Online</div>
+             
+          </div>
+      </div>                
+      <!-- End Marquee Text Line -->
+
+  </div>
+</div>
+<!-- end  -->
+<!-- footer  -->
+<my-footer></my-footer>
+
       <script>
         function changeFontSize(fontSize, sizeType) {
           // Reset all items to remove the 'active' class
@@ -246,37 +807,80 @@
         }
         
       </script>
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
 
-    // Apply sticky behavior only for larger screens
-    if (window.innerWidth > 768) {
-      gsap.to("#f-left", {
-        scrollTrigger: {
-          trigger: "#f-left",
-          start: "top top",
-          endTrigger: "#f-right",
-          end: "bottom top",
-          pin: true,
-          markers: true
-        }
-      });
-    }
-  });
-</script>
-
-      
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/font-awesome.js"></script>
       <script src="assets/js/customize.js"></script>
-      <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/scrolltrigger@3.9.0/dist/ScrollTrigger.min.js"></script>
-<script src="assets/components/header.js"></script>
+      <script src="assets/components/header.js"></script>
       <script src="assets/components/breadcrumb.js"></script>
+      <script src="assets/components/footer.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/components/story.js"></script>
     </body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const reviewForm = document.getElementById('reviewForm');
+  const submitReviewBtn = document.getElementById('submitReviewBtn');
+  const reviewsContainer = document.querySelector('.review-container .row');
+  const galleryContainer = document.querySelector('.gallary');
+  const ratingBars = document.querySelector('.rating-bars .bar');
+
+  submitReviewBtn.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const name = document.getElementById('name').value;
+    const rating = document.querySelector('.rating input:checked').value;
+    const reviewTitle = document.getElementById('reviewTitle').value;
+    const reviewTextarea = document.getElementById('reviewTextarea').value;
+    const pictureInput = document.getElementById('picture');
+    const videoInput = document.getElementById('video');
+
+    const currentDate = new Date();
+    const timestamp = currentDate.toLocaleString();
+
+    let mediaHtml = '';
+
+    if (pictureInput.files.length > 0) {
+      const pictureUrl = URL.createObjectURL(pictureInput.files[0]);
+      mediaHtml = `<img class="card-img-top" src="${pictureUrl}" alt="Review Image">`;
+      galleryContainer.innerHTML += `<img src="${pictureUrl}" alt="Review Image"/>`;
+    } else if (videoInput.files.length > 0) {
+      const videoUrl = URL.createObjectURL(videoInput.files[0]);
+      mediaHtml = `<video class="card-img-top" src="${videoUrl}" alt="Review Video" controls></video>`;
+      galleryContainer.innerHTML += `<video src="${videoUrl}" alt="Review Video" controls></video>`;
+    }
+    const starRateContainer = document.createElement('div');
+starRateContainer.classList.add('star-rate');
+
+for (let i = 0; i < Number(rating); i++) {
+  const starIcon = document.createElement('i');
+  starIcon.classList.add('fa', 'fa-star');
+  starRateContainer.appendChild(starIcon);
+}
+    const reviewHtml = `
+      <div class="col-md-4">
+        <div class="card-rating">
+          ${mediaHtml}
+          <div class="card-block">
+           
+            <h4 class="card-title mt-3">${name}</h4>
+            ${starRateContainer.outerHTML}
+            <div class="card-text">${reviewTextarea}</div>
+          </div>
+          <div class="card-footer">
+            <small>Last updated ${timestamp}</small>
+          </div>
+        </div>
+      </div>
+    `;
+    reviewsContainer.innerHTML += reviewHtml;
+
+
+    reviewForm.reset(); 
+  });
+});
+
+    </script>
   </html>

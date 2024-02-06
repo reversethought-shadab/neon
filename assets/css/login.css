@@ -1057,7 +1057,6 @@ p {
   border-top: 1px solid #20333c;
   margin-top: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320))) !important;
 }
-/*===================== 2.11 tap to top Scss start ==========================*/
 .tap-to-top-box {
   position: fixed;
   bottom: 30px;

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .container {
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.story {
+  width: 120px;
+  height: 120px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  animation: rounded-border 0.5s ease-in-out;
+  cursor: pointer; /* Add cursor for clicking */
+}
+
+@keyframes rounded-border {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out; /* Add transition for smooth fade-in */
+}
+
+.frame.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  padding: 3px;
+}
+
+.progress {
+  width: 0;
+  background-color: yellow;
+}
+
+.mute-unmute {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.mute-unmute i {
+  font-size: 32px;
+}
+
+.play-paused {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-paused i {
+  font-size: 32px;
+}
+
+.next, .previous {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.next i, .previous i {
+  font-size: 32px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.close i {
+  font-size: 24px;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="stories">
+      <div class="story" data-index="0">
+        <img src="assets/images/story/1.jpg" alt="Image 1">
+      </div>
+      <div class="story" data-index="1">
+        <img src="assets/images/story/2.jpg" alt="Image 2">
+      </div>
+      <div class="story" data-index="2">
+        <img src="assets/images/story/3.jpg" alt="Image 3">
+      </div>
+      <div class="story" data-index="3">
+        <img src="assets/images/story/4.jpg" alt="Image 4">
+      </div>
+      <div class="story" data-index="4">
+        <img src="assets/images/story/5.jpg" alt="Image 5">
+      </div>
+    </div>
+    <div class="frame">
+      <video src="assets/images/story/video.mp4" autoplay muted loop></video>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button class="mute-unmute">
+        <i class="fa fa-volume-off"></i>
+      </button>
+      <button class="play-paused">
+        <i class="fa fa-play"></i>
+      </button>
+      <button class="next">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+      <button class="previous">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="close">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+  </div>
+  <script>
+    // Import Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// Define global variables
+let currentStoryIndex = 0;
+let video = document.querySelector("video");
+let progressBar = document.querySelector(".progress-bar");
+let progress = document.querySelector(".progress");
+let muteUnmuteButton = document.querySelector(".mute-unmute");
+let playPauseButton = document.querySelector(".play-paused");
+let nextButton = document.querySelector(".next");
+let previousButton = document.querySelector(".previous");
+
+// On image click
+function onStoryClick(e) {
+  // Get the current story index
+  currentStoryIndex = e.target.parentNode.dataset.index;
+
+  // Show the frame
+  showFrame();
+
+  // Play the video
+  video.play();
+
+  // Update the progress bar
+  updateProgressBar();
+}
+
+// Show the frame
+function showFrame() {
+  // Set the frame's visibility to visible
+  document.querySelector(".frame").style.visibility = "visible";
+
+  // Set the frame's opacity to 1
+  document.querySelector(".frame").style.opacity = 1;
+}
+
+// Update the progress bar
+function updateProgressBar() {
+  // Get the current video time
+  let currentVideoTime = video.currentTime;
+
+  // Set the progress bar's width to the current video time
+  progress.style.width = currentVideoTime * 100 / video.duration + "%";
+}
+
+// Mute/unmute the video
+function onMuteUnmuteClick() {
+  // Toggle the video's muted state
+  video.muted = !video.muted;
+
+  // Change the icon's class
+  muteUnmuteButton.classList.toggle("fa-volume-off");
+  muteUnmuteButton.classList.toggle("fa-volume-up");
+}
+
+// Play/pause the video
+function onPlayPauseClick() {
+  // Toggle the video's playing state
+  video.paused = !video.paused;
+
+  // Change the icon's class
+  playPauseButton.classList.toggle("fa-play");
+  playPauseButton.classList.toggle("fa-pause");
+}
+
+// Go to the next story
+function onNextClick() {
+  // Increment the current story index
+  currentStoryIndex++;
+
+  // Check if the current story index is greater than the number of stories
+  if (currentStoryIndex > 4) {
+    // Reset the current story index
+    currentStoryIndex = 0;
+  }
+
+  // Load the next story
+  loadStory(currentStoryIndex);
+}
+
+// Go to the previous story
+function onPreviousClick() {
+  // Decrement the current story index
+  currentStoryIndex--;
+
+  // Check if the current story index is less than 0
+  if (currentStoryIndex < 0) {
+    // Reset the current story index
+    currentStoryIndex = 4;
+  }
+
+  // Load the previous story
+  loadStory(currentStoryIndex);
+}
+
+// Load the story
+function loadStory(index) {
+  // Get the current story
+  let story = document.querySelector(".stories .story[data-index='" + index + "']");
+
+  // Get the story's image
+  let image = story.querySelector("img");
+
+  // Set the video's source to the story's image
+  video.src = image.src;
+
+  // Clear the progress bar
+  progress.style.width = 0;
+
+  // Update the progress bar
+  updateProgressBar();
+}
+
+// Initialize the application
+window.onload = function() {
+  // Load the first story
+  loadStory(0);
+
+  // Add event listeners
+  document.querySelectorAll(".stories .story").forEach(function(story) {
+    story.addEventListener("click", onStoryClick);
+  });
+
+  muteUnmuteButton.addEventListener("click", onMuteUnmuteClick);
+  playPauseButton.addEventListener("click", onPlayPauseClick);
+  nextButton.addEventListener("click", onNextClick);
+  previousButton.addEventListener("click", onPreviousClick);
+};
+
+  </script>
+</body>
+</html>

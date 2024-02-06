@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="assets/css/customize.css" /> -->
+    <link rel="stylesheet" href="assets/css/whatwedo.css" />
+    <link rel="stylesheet" href="assets/css/story.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    @font-face {
+      font-family: Eurostile_Extended;
+      src: url(../fonts/eurostile_extended_black.ttf);
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap");
+  </style>
+  <style>
+     
+
+    #cartContainer {
+      font-size: 6rem;
+      color: #12dd7e;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
+    <!-- top header  -->
+
+    <my-header></my-header>
+
+    <!-- breadcrumb ==== -->
+    <section style="background-color: #212529">
+      <div class="container py-2">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">
+                <svg
+                  width="23"
+                  class="red"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8.94369L10.0675 1.51755C10.9101 0.827482 12.0899 0.827482 12.9325 1.51755L22 8.94369M4.5 6.07724V17.543C4.5 18.9 5.54467 20 6.83333 20H8H15H16.1667C17.4553 20 18.5 18.9 18.5 17.543V1.57281M9.16667 20V12.6291C9.16667 11.9507 9.689 11.4006 10.3333 11.4006H12.6667C13.311 11.4006 13.8333 11.9507 13.8333 12.6291V20"
+                    stroke="#12dd7e"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumb-item " aria-current="page">
+           <a href="best-seller.html" class=" text-decoration-none text-white">Shop</a>  
+            </li>
+            <li class="breadcrumb-item " aria-current="page">
+             <a href="cart.html" class=" text-decoration-none text-white">Cart</a> 
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+             Checkout
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+   
+    <!-- Checkout  -->
+    <section class="main-wrapper page-section">
+
+      <!-- Start Checkout Area  -->
+      <div class="axil-checkout-area axil-section-gap">
+          <div class="container">
+              <form action="#" id="myform">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="axil-checkout-notice">
+                              <div class="axil-toggle-box">
+                                  <div class="toggle-bar toggle-form"><i class="fas fa-user"></i> Returning customer? <a href="javascript:void(0)" class="toggle-btn">Click here to login <i class="fas fa-angle-down"></i></a>
+                                  </div>
+                                  <div class="axil-checkout-login toggle-open" style="display: none;">
+                                      <p>If you didn't Logged in, Please Log in first.</p>
+                                      <div class="signin-box">
+                                          <div class="form-group">
+                                              <label>Email</label>
+                                              <input type="email" class="form-control" name="email">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Password</label>
+                                              <input type="password" class="form-control" name="password">
+                                          </div>
+                                          <div class="form-group mb--0">
+                                              <button type="submit" class="axil-btn btn-bg-primary submit-btn">Sign In</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="axil-toggle-box">
+                                  <div class="toggle-bar toggle-coupon"><i class="fas fa-pencil"></i> Have a coupon? <a href="javascript:void(0)" class="toggle-btn">Click here to enter your code <i class="fas fa-angle-down"></i></a>
+                                  </div>
+
+                                  <div class="axil-checkout-coupon toggle-open" style="display: none;">
+                                      <p>If you have a coupon code, please apply it below.</p>
+                                      <div class="input-group">
+                                          <input placeholder="Enter coupon code" type="text">
+                                          <div class="apply-btn">
+                                              <button type="submit" class="axil-btn btn-bg-primary">Apply</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="axil-checkout-billing">
+                              <h4 class="title mb--40">Billing details</h4>
+                              <div class="row">
+                                  <div class="col-lg-6">
+                                      <div class="form-group">
+                                          <label>First Name <span>*</span></label>
+                                          <input type="text" id="first-name" name="fname" placeholder="Adam">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="form-group">
+                                          <label>Last Name <span>*</span></label>
+                                          <input type="text" id="last-name" name="lname" placeholder="John">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Company Name</label>
+                                  <input type="text" id="company-name">
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputState">States<span>*</span></label>
+                                  <select id="inputState">
+                                    <option value="SelectState">Select State</option>
+                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Orissa">Orissa</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttaranchal">Uttaranchal</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadeep">Lakshadeep</option>
+                                    <option value="Pondicherry">Pondicherry</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputDistrict">District<span>*</span></label>
+                                  <input type="text" name="district" id="district" class="mb-4" placeholder=" Enter Your District">
+                              </div>
+                              <div class="form-group">
+                                  <label>Street Address <span>*</span></label>
+                                  <input type="text" id="address1" class="mb-4" name="street" placeholder="House number and street name">
+                                  <input type="text" id="address2"  placeholder="Apartment, suite, unit, etc. (optonal)">
+                              </div>
+                              <div class="form-group">
+                                  <label>Town/ City <span>*</span></label>
+                                  <input type="text" name="city" id="town">
+                              </div>
+                              <div class="form-group">
+                                  <label>Country</label>
+                                  <input type="text" name="region" id="country">
+                              </div>
+                              <div class="form-group">
+                                  <label>Phone <span>*</span></label>
+                                  <input type="tel" name="phone" id="phone">
+                              </div>
+                              <div class="form-group">
+                                  <label>Email Address <span>*</span></label>
+                                  <input type="email" name="email" id="email">
+                              </div>
+                              <div class="form-group different-shippng">
+                                <div class="toggle-bar ">
+                                    <a href="javascript:void(0)" class="toggle-btn">
+                                        <input type="checkbox" id="checkbox2" name="diffrent-ship">
+                                        <label for="checkbox2">Ship to a different address?</label>
+                                    </a>
+                                </div>
+                                <div class="toggle-open deffi-open" style="display: none;">
+                                    <div class="form-group">
+                                        <label for="inputState" >States<span>*</span></label>
+                                        <select id="inputState">
+                                          <option value="SelectState">Select State</option>
+                                          <option value="Andra Pradesh">Andra Pradesh</option>
+                                          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                          <option value="Assam">Assam</option>
+                                          <option value="Bihar">Bihar</option>
+                                          <option value="Chhattisgarh">Chhattisgarh</option>
+                                          <option value="Goa">Goa</option>
+                                          <option value="Gujarat">Gujarat</option>
+                                          <option value="Haryana">Haryana</option>
+                                          <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                          <option value="Jharkhand">Jharkhand</option>
+                                          <option value="Karnataka">Karnataka</option>
+                                          <option value="Kerala">Kerala</option>
+                                          <option value="Madya Pradesh">Madya Pradesh</option>
+                                          <option value="Maharashtra">Maharashtra</option>
+                                          <option value="Manipur">Manipur</option>
+                                          <option value="Meghalaya">Meghalaya</option>
+                                          <option value="Mizoram">Mizoram</option>
+                                          <option value="Nagaland">Nagaland</option>
+                                          <option value="Orissa">Orissa</option>
+                                          <option value="Punjab">Punjab</option>
+                                          <option value="Rajasthan">Rajasthan</option>
+                                          <option value="Sikkim">Sikkim</option>
+                                          <option value="Tamil Nadu">Tamil Nadu</option>
+                                          <option value="Telangana">Telangana</option>
+                                          <option value="Tripura">Tripura</option>
+                                          <option value="Uttaranchal">Uttaranchal</option>
+                                          <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                          <option value="West Bengal">West Bengal</option>
+                                          <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                          <option value="Chandigarh">Chandigarh</option>
+                                          <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                          <option value="Daman and Diu">Daman and Diu</option>
+                                          <option value="Delhi">Delhi</option>
+                                          <option value="Lakshadeep">Lakshadeep</option>
+                                          <option value="Pondicherry">Pondicherry</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDistrict">District<span>*</span></label>
+                                        <input type="text" id="district" class="mb-4" placeholder=" Enter Your District">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Street Address <span>*</span></label>
+                                        <input type="text" id="address1" name="adress" class="mb-4" placeholder="House number and street name">
+                                        <input type="text" id="address2" class="" placeholder="Apartment, suite, unit, etc. (optonal)">
+                                    </div>
+                                   
+                                   
+                                    <div class="form-group">
+                                        <label>Phone <span>*</span></label>
+                                        <input type="tel" name="phone" id="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email <span>*</span></label>
+                                        <input type="email" name="email" id="email">
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                              <div class="form-group">
+                                  <label>Other Notes (optional)</label>
+                                  <textarea id="notes" rows="2" placeholder="Notes about your order, e.g. speacial notes for delivery."></textarea>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="axil-order-summery order-checkout-summery">
+                              <h5 class="title mb--20">Your Order</h5>
+                              <div class="summery-table-wrap">
+                                  <table class="table summery-table">
+                                      <thead>
+                                          <tr>
+                                              <th>Product</th>
+                                              <th>Subtotal</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr class="order-product">
+                                              <td>This Is Our Happy Place Neon Sign  <span class="quantity">-1</span></td>
+                                              <td>₹10,499</td>
+                                          </tr>
+                                          <tr class="order-product">
+                                              <td>FREE Crown Light Worth ₹4000 <span class="quantity">-1</span></td>
+                                              <td>Free</td>
+                                          </tr>
+                                          <tr class="order-product">
+                                              <td>FREE Remote Controller Worth ₹1500 <span class="quantity">-1</span></td>
+                                              <td>Free</td>
+                                          </tr>
+                                          <tr class="order-subtotal">
+                                              <td>Subtotal</td>
+                                              <td>₹10,499</td>
+                                          </tr>
+                                          
+                                          <tr class="order-total">
+                                              <td>Total</td>
+                                              <td class="order-total-amount">₹10,499</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                              <div class="order-payment-method">
+                                <div class="row payment-method-sec">
+                                  <div class="col-md-12">
+                                      
+                                      
+                                      <div class="d-flex align-items-baseline">
+                                          <input type="radio" class="payment_type" id="credit" name="payment_type" value="2" checked="" onclick="select_payment_option(this)">
+                                          <label for="credit" class="ps-2 pt-1">Credit Card
+                                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="222" height="33" viewBox="0 0 222 33" fill="none">
+                                                  <rect width="222" height="33" fill="url(#pattern0)"></rect>
+                                                  <defs>
+                                                      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                          <use xlink:href="#image0_774_301" transform="matrix(0.002457 0 0 0.0165289 0 0.227273)"></use>
+                                                      </pattern>
+                                                      <image id="image0_774_301" width="407" height="33" xlink:href="data:image/png;base64,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"></image>
+                                                  </defs>
+                                              </svg>
+                                          </label>
+                                      </div>
+                                      <div class="row checkout-form card-details mt-3">
+                                          <div class="col-md-12 text-center">
+                                                                                                      </div>
+                                          <div class="col-md-12 mb-3">
+                                              <div class="form-group">
+                                                  <label for="card-holder-name" >Card Holder Name <sup>*</sup></label>
+                                                  <input type="text" id="card-holder-name" placeholder="Enter Your Name" class="form-control" value="" name="card_holder_name">
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12 mb-3">
+                                              <div class="form-group">
+                                                  <label for="card-number">Card Number <sup>*</sup></label>
+                                                  <input type="text" id="card-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="form-control valid" value="" name="card_number" data-gtm-form-interact-field-id="0" aria-required="true" aria-invalid="false">
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                              <div class="form-group">
+                                                  <label for="cvv">CVV <sup>*</sup></label>
+                                                  <input type="text" maxlength="3" id="cvv" class="form-control" oninput="this.value =this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');" value="" placeholder="xxx" name="cvv">
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                              <div class="form-group">
+                                                  <label for="exp-date">Exp Date <sup>*</sup></label>
+                                                  <input type="text" id="exp-date" class="form-control" placeholder="05/26" onkeypress="myFunction()" maxlength="5" oninput="this.value =this.value.replace(/[^0-9/]/g, '').replace(/(\..*?)\..*/g, '$1');" value="" name="exp_date">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="cart-right-box-1 mt-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex">
+                                                    <input type="checkbox" id="terms" name="terms" value="1" checked="" data-gtm-form-interact-field-id="1">
+                                                    <label for="bank" class="ps-2 pt-1">I have read and agree to the website
+                                                        <a href="terms-condition.html"><b>terms and conditions </b><sup>*</sup></a></label><br>
+                                                </div>
+                                                <p class="text-danger terms-error"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="shop-now-btn btn mt-4 w-100 py-3" value=" Make Payment ">
+                                  </div>
+                              </div>
+                              </div>
+                            
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <!-- End Checkout Area  -->
+
+  </section>
+    <!-- Checkout end -->
+
+    <my-footer></my-footer>
+    <script>
+      function shipingAddress(){
+          var ship=$('#ship').val();
+          if(ship == 0){
+              $('#shipping-address').removeClass('d-none');
+              $('#ship').val(1);
+          }else{
+              $('#shipping-address').addClass('d-none');
+              $('#ship').val(0);
+          }
+      }
+      // just for the demos, avoids form submit
+      jQuery(document).ready(function() {
+          jQuery.validator.addMethod("lettersonly", function(value, element) {
+              return this.optional(element) || /^[a-zA-Z\s]+$/.test(value);
+          }, "Number not allowed.");
+
+
+          jQuery("#myform").validate({
+              rules: {
+                  card_holder_name: {
+                      required: true,
+                      lettersonly: true
+                  },
+                  fname: {
+                      required: true,
+                      lettersonly: true
+                  },
+                  lname: {
+                      lettersonly: true
+                  },
+                  region: 'required',
+                  street: 'required',
+                  city: 'required',
+                  district: 'required',
+                  zipcode: {
+                      required: true,
+                      number: true
+                  },
+                  phone: {
+                      required: true,
+                      number: true,
+                      maxlength: 10
+                  },
+                  email: {
+                      required: true,
+                      email: true
+                  },
+                  card_holder_name: {
+                      required: true,
+                      lettersonly: true
+                  },
+                  card_number: 'required',
+                  cvv: {
+                      required: true,
+                      maxlength: 3
+                  },
+                  exp_date: 'required',
+                  terms: 'required',
+              },
+              errorPlacement: function(error, element) {
+                  var placement = $(element).data('error');
+                  if (element.attr("name") == "terms") {
+                      $(".terms-error").text($(error).text());
+                  } else {
+                      error.insertAfter(element);
+                  }
+              }
+          });
+      });
+
+
+    
+      function myFunction() {
+          var expire_date = document.getElementById('exp-date').value;
+          if (expire_date.length == 2) {
+              document.getElementById('exp-date').value = expire_date + '/';
+          }
+      }
+  </script>
+  <script>
+    document.getElementById('card-number').addEventListener('input', function (event) {
+    var input = event.target;
+    var value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
+
+    if (value.length > 16) {
+      value = value.slice(0, 16); // Truncate to 16 digits
+    }
+
+    // Add spaces to format the card number
+    var formattedValue = value.replace(/(\d{4})/g, '$1 ').trim();
+
+    input.value = formattedValue;
+  });
+  </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/font-awesome.js"></script>
+    <script src="assets/components/header.js"></script>
+    <script src="assets/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/components/story.js"></script>
+  </body>
+  <script>
+    $(document).ready(function () {
+         $('.toggle-form').on('click', function () {
+             $('.axil-checkout-login').toggle(); 
+         });
+    
+         $(' .toggle-coupon').on('click', function () {
+             $(' .axil-checkout-coupon').toggle(); 
+         });
+         $('#checkbox2').on('change', function () {
+            $('.deffi-open').slideToggle(this.checked);
+        });
+     });
+
+     </script>
+
+</html>

@@ -49,16 +49,20 @@ class MyHeader extends HTMLElement {
 <div class="container-fluid bg-light">
   <div class="container px-0">
       <nav class="navbar navbar-light navbar-expand-xl">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand magnet">
               <h1 class="text-primary display-4">Neon</h1>
           </a>
-          <button class="navbar-toggler py-2 px-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
-              <span class="fa fa-bars text-primary"></span>
+          <button class="navbar-toggler navbar__toggle  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+          <div class="navbar__toggle__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
           </button>
           <div class="navbar-collapse bg-light py-3 collapse" id="navbarCollapse" >
               <div class="navbar-nav mx-auto border-top">
                 <div class="nav-item dropdown ">
-                    <a href="#" class="nav-link dropdown-toggle  active" data-bs-toggle="dropdown">Customize</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Customize</a>
                     <div class="dropdown-menu m-0  site-nav-dropdown ">
                       <div class="site-nav__dropdown site-nav__dropdown--left custom_menu_list">
                         <ul>
@@ -95,12 +99,12 @@ class MyHeader extends HTMLElement {
                       <div class="site-nav__dropdown site-nav__dropdown--left custom_menu_list">
                         <ul>
                           <li>
-                            <a href="customize-neon.html" class="site-nav__link site-nav__child-link">
+                            <a href="best-seller.html" class="site-nav__link site-nav__child-link">
                               <img class="menu_image_sub lazyloaded"
                                 data-src="assets/images/stories/1.jpg"
                                 loading="lazy"
                                 src="assets/images/stories/1.jpg">
-                              <span class="site-nav__label">Neon Sign<span class="menu_image_arrow_right"><i
+                              <span class="site-nav__label">Best seller<span class="menu_image_arrow_right"><i
                                     class="fas fa-chevron-circle-right"></i></span>
                             </a>
                           </li>
@@ -110,7 +114,7 @@ class MyHeader extends HTMLElement {
                                 data-src="assets/images/stories/1.jpg"
                                 loading="lazy"
                                 src="assets/images/stories/1.jpg">
-                              <span class="site-nav__label">Neon Sign<span class="menu_image_arrow_right"><i
+                              <span class="site-nav__label">For business<span class="menu_image_arrow_right"><i
                                     class="fas fa-chevron-circle-right"></i></span>
                             </a>
                           </li>
@@ -121,7 +125,7 @@ class MyHeader extends HTMLElement {
                                 data-src="assets/images/stories/2.jpg"
                                 loading="lazy"
                                 src="assets/images/stories/2.jpg">
-                              <span class="site-nav__label">FloRo Sign <span class="menu_image_arrow_right"><i
+                              <span class="site-nav__label">For event <span class="menu_image_arrow_right"><i
                                     class="fas fa-chevron-circle-right"></i></span>
                             </a>
                           </li>
@@ -133,7 +137,7 @@ class MyHeader extends HTMLElement {
                                 data-src="assets/images/stories/1.jpg"
                                 loading="lazy"
                                 src="assets/images/stories/1.jpg">
-                              <span class="site-nav__label">Neon Sign<span class="menu_image_arrow_right"><i
+                              <span class="site-nav__label">Under ₹4000 <span class="menu_image_arrow_right"><i
                                     class="fas fa-chevron-circle-right"></i></span>
                             </a>
                           </li>
@@ -143,7 +147,7 @@ class MyHeader extends HTMLElement {
                                 data-src="assets/images/stories/1.jpg"
                                 loading="lazy"
                                 src="assets/images/stories/1.jpg">
-                              <span class="site-nav__label">Neon Sign<span class="menu_image_arrow_right"><i
+                              <span class="site-nav__label">For Kids <span class="menu_image_arrow_right"><i
                                     class="fas fa-chevron-circle-right"></i></span>
                             </a>
                           </li>
@@ -164,9 +168,9 @@ class MyHeader extends HTMLElement {
                     </div>
                 </div>
                  
-                  <a href="" class="nav-item nav-link">Head Light</a>
-                  <a href="" class="nav-item nav-link">Business Neon Logo</a>
-                  <a href="#" class="nav-item nav-link">Why Attack</a>
+                  <a href="head-light.html" class="nav-item nav-link">Head Light</a>
+                  <a href="business-neon-logo.html" class="nav-item nav-link">Business Neon Logo</a>
+                  <a href="why-neon.html" class="nav-item nav-link">Why Attack</a>
               </div>
               <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                   <button class="btn-search btn btn-primary btn-primary-outline-0  icon-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search "></i></button>
@@ -216,3 +220,14 @@ class MyHeader extends HTMLElement {
 }
 
 customElements.define("my-header", MyHeader);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active"); // Remove 'active' class from all links
+    if (link.href === window.location.href) {
+      link.classList.add("active"); // Add 'active' class to the link that matches the current URL
+    }
+  });
+});

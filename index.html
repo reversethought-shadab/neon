@@ -7,29 +7,631 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/whatwedo.css">
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/story.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- custom cursor  -->
-    <div id="cursor" style="transform: translate(49px, 969px);"></div>
-    <div id="cursor-border" style="transform: translate(49px, 969px); background-color: unset; --size: 30px; mix-blend-mode: unset;"></div>
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
     <!-- top header  -->
-  <my-header></my-header>
+    <my-header></my-header>
     <my-story></my-story>
-    
-    <!-- banner ===== -->
-    
-    <script src="assets/js/jquery.min.js"></script>
+    <my-hero></my-hero>
+
+    <!-- cards  -->
+    <my-card></my-card>
+   
+    <section class="support-section page-section">
+      <div class="container">
+          <h2 class="head-title" style="font-family: Golden_Hopes;"><span class="blue-color">
+                  Why Choose </span> Neon ? </h2>
+          <div class="row my-3">
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/warunty.svg" loading="lazy" alt="Warranty" title="Warranty">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0"> Two Year Warranty </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/world-class.svg" loading="lazy" alt="World-class Craftsmanship" title="World-class Craftsmanship">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0"> World-class Craftsmanship</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/shipping.svg" loading="lazy" alt="Free + Fast Shipping" title="Free + Fast Shipping">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">Free + Fast Shipping</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/premium.svg" loading="lazy" alt="Premium Quality" title="Premium Quality">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">Premium Quality</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/power.svg" loading="lazy" alt="Power-efficient" title="Power-efficient">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">Power-efficient</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/pen.svg" loading="lazy" alt="Easy Customizations" title="Easy Customizations">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">Easy Customizations</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/customer.svg" loading="lazy" alt="100% Satisfaction Rate" title="100% Satisfaction Rate">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">100% Satisfaction Rate</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="support-list d-flex">
+                      <figure class="mb-0">
+                          <img src="assets/images/svg/mobile.svg" loading="lazy" alt="Phone Control" title="Phone Control">
+                      </figure>
+                      <div class="support-list-text">
+                          <p class="mb-0">Phone Control</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="about-section section-b-space section-mb-space" style="border-right: 1px solid #12dd7e;">
+    <div class="bg-effect aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"></div>
+    <div class="container page-section" style="border-right: none;">
+        <div class="row g-md-5 g-4">
+            <div class="col-lg-6 order-lg-0 order-1">
+                <div class="about-content">
+                    <div>
+                        <div class="title">
+                            <h2 class="text-black head-title mb-0 pb-0">Customize
+                               </h2>
+                               <h2 style="font-family:Golden_hopes;font-size: 7rem;color: #12dd7e;">Your Idea</h2>
+                        </div>
+                        <p>Be it your name, a cheesy quote or yet another line from F.R.I.E.N.D.S; the options are unlimited when you become the creator of your own neon sign.</p>
+                        <p>Simply type your text, select the font, colour and size to create your own sign.</p>
+                        <ul style="border-top:1px solid #12dd7e; color: #12dd7e; font-size: 1.3rem; font-weight: 500;">
+                          Easy shopping Much wow.
+
+                            <li class="mt-3"><img src="assets/images/svg/pen.svg" class="img-fluid" alt="Edit">Edit Your Sign</li>
+                            <li><img src="assets/images/svg/tick.svg" class="img-fluid" alt="tick">Check it out  </li>
+                            <li><img src="assets/images/svg/shipping.svg" class="img-fluid" alt="tick">Consignment
+                              shipped!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="assets/images/laptop_guy.webp" class="img-fluid" alt="about">
+                </div>
+            </div>
+        </div>
+        <div class="linkWrap text-center">
+          <a href="customize-neon.html" class="cta style-9">
+            <span>Customise your sign </span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+</section>
+<section class="about-section right-version aos-animate  section-b-space section-mb-space" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" style="border-left: 1px solid #12dd7e;">
+  <div class="bg-effect aos-init aos-animate " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"></div>
+  <div class="container page-section" style="border-left: none;">
+      <div class="row g-md-5 g-4">
+          <div class="col-lg-6">
+              <div class="about-img">
+                  <img src="assets/images/svg/floro.png" class="img-fluid" alt="about">
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="about-content">
+                  <div>
+                      <div class="title">
+                          <h2 class="head-title"> FloRo</h2>
+                      </div>
+                      <p>Introducing dynamic neon signs with over 200+ flow modes and countless colour-changing options.</p>
+                     <p>FloRo neon signs are truly a revolution in neon. Switch up the style of your sign; any second, any minute, any time with a simple swipe on your smartphone.</p>
+                     <div class="floro_btn animaction_top1 d-flex" data-scroll1="">
+                      <a href="#" class=""><span>Customize FloRo</span></a>
+                      <a href="#" class=""><span>Floro Collection</span></a>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="scroll-section ">
+  <div class="recipe-container">
+   <div class="text-center">
+     <h2>Everyone's  <span style="font-family: Brittanysignature; color: #12dd7e;">vibin'</span></h2>
+     <p class="text-dark fs-2 fw-bold" style="font-family:'Golden_hopes';">Check out Neon Attack's current bestsellers:</p>
+     <div class="linkWrap text-center">
+       <a href="#" class="cta style-9">
+         <span>Shop All</span>
+         <svg width="13px" height="10px" viewBox="0 0 13 10">
+           <path d="M1,5 L11,5"></path>
+           <polyline points="8 1 12 5 8 9"></polyline>
+         </svg>
+       </a>
+     </div>
+   </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide post">
+          <img
+            class="post-img"
+            src="assets/images/good-vibez.avif"
+            alt="vibez" />
+
+          <div class="post-body">
+           <a href="customize-neon.html" class="text-decoration-none">
+             <img
+               class="post-avatar"
+               src="assets/images/svg/button-arrow.svg"
+               alt="arrow" />
+           </a>
+            <div class="post-detail">
+              <h2 class="post-name">Good Vibez</h2>
+              <p class="post-author">₹8,499 <span style="text-decoration: line-through;">₹ 10,000</span></p>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+</section>
+<section class="section section-md page-section pb-3" id="features">
+  <div class="container">
+    <div class="row row-10 flex-lg-row-reverse align-items-lg-center">
+      <div class="col-lg-6 ">
+        <div class="title">
+          <h2 class="text-black head-title mb-0 pb-0">Jazz up
+             </h2>
+             <h2 class="text-center" style="font-family:Golden_hopes;font-size: 7rem;color: #12dd7e;">your biz.</h2>
+      </div>
+        <p class="bigger mx-lg-5">Represent your business with a funky and stylish neon sign!</p>
+        <p class="bigger mx-lg-5">Send us your requirements and get custom-made neon logo's or quotes for your storefront and turn it into a desirable backdrop for all your work-time selfies.</p>
+        
+      </div>
+      <div class="col-lg-6 "><img class=" rounded-5 img-fluid" src="assets/images/svg/girls.webp" alt="girls"  loading="lazy">
+      </div>
+      <div class="linkWrap text-center">
+        <a href="#" class="cta style-9">
+          <span>Get it now</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- logo  -->
+<div class="logo-slider-1 page-section">
+  <h2 class="head-title text-dark">Trusted by</h2>
+  <div class="owl-carousel version-1">
+    <div> <img src="assets/images/svg/merci.png"> </div>
+    <div> <img src="assets/images/svg/adrua.png"> </div>
+    <div> <img src="assets/images/svg/moj.webp"> </div>
+    <div> <img src="assets/images/svg/nykaa.png"> </div>
+    <div> <img src="assets/images/svg/ting.avif"> </div>
+    <div> <img src="assets/images/svg/fampay.webp"> </div>
+   
+  </div>
+</div>
+<!-- End Simple logo carousel slider -->
+<!-- Logo slider with Title and description -->
+<div class="logo-slider-2 page-section">
+    <div class="title">
+  <h2 class="text-black head-title mb-0 pb-0">Customers
+     </h2>
+     <h2 class="text-center" style="font-family:Golden_hopes;font-size: 7rem;color: #12dd7e;">that make us shine</h2>
+     
+</div>
+ 
+  <div class="owl-carousel version-2">
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg">
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+    <div> 
+      <img src="assets/images/svg/ts1-user.jpg"> 
+      <h2>Logo title</h2>
+      <p>Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst. Sed aliquam ultrices mauris.</p>
+    </div>
+  </div>
+</div>
+<!-- end slider View with Title and description -->
+<!-- faq section  -->
+<section class="faq-section page-section">
+  <div class="container">
+      <div class="title-basic">
+          <h2 class="head-title text-dark ">Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                      Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+                  <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus hic quia saepe harum, odio accusamus temporibus dolorum sint perferendis enim. </p>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                     Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                  <button data-cursor="pointer" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                     Lorem ipsum dolor sit amet consectetur.
+                  </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                  <div class="accordion-body">
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi autem rerum quis eius laudantium consequatur natus aspernatur similique minus odit!
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+                
+<div class=" overflow-hidden" >  
+   
+  <div class="pt-40 pb-40 pt-md-0 pb-md-0">
+  
+      <!-- Marquee Text Line -->
+      <div class="marquee marquee-style-3 mb-30 mb-md-0 z-index-1" id="search">
+
+          <div class="marquee-track marquee-animation-1a">
+              <div>Living Room Neon Sign</div>
+              <div aria-hidden="true">Best Neon Lights</div>
+              <div aria-hidden="true">Best Neon Lights Online</div>
+              <div aria-hidden="true">Best Neon Sign Online</div>
+              <div aria-hidden="true">Best Neon Sign</div>
+              <div aria-hidden="true">Best Neon Lights</div>
+              <div aria-hidden="true">Neon Signs Online</div>
+              <div aria-hidden="true">Neon Lights Online</div>
+             
+          </div>
+      </div>                
+      <!-- End Marquee Text Line -->
+
+  </div>
+</div>
+<section class="newsletter page-section pt-2">
+  <div class="text-center">
+    <img src="assets/images/svg/Razorpay.svg" height="170" width="170" class="img-fluid" alt="">
+    <p>Razorpay Trusted Business</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+      <div class="head-title pb-0 ">
+        Join Our Vibe Tribe
+      </div>
+      <div class="text-center">
+        <p>Get Free Neon Goodies Worth ₹5000 and be the first to hear about our new offers, collections and more!</p>
+        <p>Don’t worry! We don’t spam.</p>
+      </div>
+      <div class="linkWrap text-center">
+        <a href="#" class="cta style-9" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span>Get in touch</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer  -->
+<my-footer></my-footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content new-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Razorpay Trusted Business</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          
+          <div class="form-group mb-4">
+          <input type="number" class="form-control px-3" maxlength="15"   placeholder="Enter Phone number" required>
+          </div>
+          <div class="form-group mb-4">
+          <input type="email" class="form-control px-3" maxlength="30"   placeholder="Enter your email" required>
+          </div>
+          <div class="d-flex">
+          <div class="mx-auto">
+          <a href="#" class="btn btn-primary">Submit</a>
+          </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/components/hero.js"></script>
     <script src="assets/components/header.js"></script>
+    <script src="assets/components/card.js"></script>
+    <script src="assets/components/footer.js"></script>
+    <script src="assets/js/header-animation.js"></script>
     <script src="assets/components/story.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/font-awesome.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+          loop:true,
+          slidesPerView:3,
+          spaceBetween:30,
+          768:{
+            slidesPerView:1
+          }
+        },
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
+      

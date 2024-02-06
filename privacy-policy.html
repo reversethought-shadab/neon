@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="assets/css/customize.css" /> -->
+    <link rel="stylesheet" href="assets/css/whatwedo.css" />
+    <link rel="stylesheet" href="assets/css/story.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    @font-face {
+      font-family: Eurostile_Extended;
+      src: url(../fonts/eurostile_extended_black.ttf);
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap");
+  </style>
+  <style>
+     
+
+    #cartContainer {
+      font-size: 6rem;
+      color: #12dd7e;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
+    <!-- top header  -->
+
+    <my-header></my-header>
+
+    <!-- breadcrumb ==== -->
+    <section style="background-color: #212529">
+      <div class="container py-2">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">
+                <svg
+                  width="23"
+                  class="red"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8.94369L10.0675 1.51755C10.9101 0.827482 12.0899 0.827482 12.9325 1.51755L22 8.94369M4.5 6.07724V17.543C4.5 18.9 5.54467 20 6.83333 20H8H15H16.1667C17.4553 20 18.5 18.9 18.5 17.543V1.57281M9.16667 20V12.6291C9.16667 11.9507 9.689 11.4006 10.3333 11.4006H12.6667C13.311 11.4006 13.8333 11.9507 13.8333 12.6291V20"
+                    stroke="#12dd7e"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumb-item " aria-current="page">
+           <a href="#" class=" text-decoration-none text-white">Privacy policy</a>  
+            </li>
+        
+          </ol>
+        </nav>
+      </div>
+    </section>
+   
+  
+    <section class="privacy-police py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-sr="enter bottom and move 150px 0.3s">
+                    <div class="wrap-blog-detail">
+                        <div class="wrap-privacy-policy-content">
+                            <p></p><p><span style="font-size:18px;"><strong>1. Warranty and Liability:</strong></span><br><span style="font-size:18px;">a. The Seller warrants that the Product will perform its intended functions and be free from defects at the time of delivery.</span><br><span style="font-size:18px;">b. The Seller shall not be liable for any damages, losses, or expenses incurred by the Buyer arising from the use or inability to use the Product.</span></p><p><span style="font-size:18px;"><strong>2. Refund or Exchange:</strong></span><br><span style="font-size:18px;">a. If customer is not satisfied with the product or software they may initiate a request for refund &amp; return of product within 7 working days from the date of document signed (same as date of product purchased).</span><br><span style="font-size:18px;">b. The return or request for refund to be initiated in written via mail or registered email.</span><br><span style="font-size:18px;">c. In case of return or exchange of physical device, buyer has to bear the shipping and return charges or restocking fee i.e. 15% to 45% depending upon the product condition.</span><br><span style="font-size:18px;">d. In case of product is physically damaged by the customer so seller has rights to deny the return/exchange request.</span></p><p><span style="font-size:18px;"><strong>3. Governing Law and Jurisdiction:</strong></span><br><span style="font-size:18px;">a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero dignissimos natus alias ducimus quia sed. Non maxime ratione delectus.</span><br><span style="font-size:18px;">b. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, perferendis vero. Minus nisi commodi magni quaerat voluptas aperiam, blanditiis repudiandae, voluptatibus, adipisci laborum harum! Aliquam id sapiente dolorem dolor iure?</span></p><p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <my-footer></my-footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/font-awesome.js"></script>
+    <script src="assets/components/header.js"></script>
+    <script src="assets/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/components/story.js"></script>
+  </body>
+  
+
+</html>

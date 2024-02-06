@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/f255af1b0fe123133e8350c3ca1a09dc?family=Flowee"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="assets/css/customize.css" /> -->
+    <link rel="stylesheet" href="assets/css/whatwedo.css" />
+    <link rel="stylesheet" href="assets/css/story.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    @font-face {
+      font-family: Eurostile_Extended;
+      src: url(../fonts/eurostile_extended_black.ttf);
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap");
+  </style>
+  <style>
+     
+
+    #cartContainer {
+      font-size: 6rem;
+      color: #12dd7e;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
+    <!-- top header  -->
+
+    <my-header></my-header>
+
+    <!-- breadcrumb ==== -->
+    <section style="background-color: #212529">
+      <div class="container py-2">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">
+                <svg
+                  width="23"
+                  class="red"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8.94369L10.0675 1.51755C10.9101 0.827482 12.0899 0.827482 12.9325 1.51755L22 8.94369M4.5 6.07724V17.543C4.5 18.9 5.54467 20 6.83333 20H8H15H16.1667C17.4553 20 18.5 18.9 18.5 17.543V1.57281M9.16667 20V12.6291C9.16667 11.9507 9.689 11.4006 10.3333 11.4006H12.6667C13.311 11.4006 13.8333 11.9507 13.8333 12.6291V20"
+                    stroke="#12dd7e"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumb-item " aria-current="page">
+           <a href="#" class=" text-decoration-none text-white">Why Us</a>  
+            </li>
+        
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="support-section page-section">
+        <div class="container">
+            <h2 class="head-title" style="font-family: Golden_Hopes;"><span class="blue-color">
+                    Why Choose </span> Neon ? </h2>
+            <div class="row my-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/warunty.svg" loading="lazy" alt="Warranty" title="Warranty">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0"> Two Year Warranty </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/world-class.svg" loading="lazy" alt="World-class Craftsmanship" title="World-class Craftsmanship">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0"> World-class Craftsmanship</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/shipping.svg" loading="lazy" alt="Free + Fast Shipping" title="Free + Fast Shipping">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">Free + Fast Shipping</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/premium.svg" loading="lazy" alt="Premium Quality" title="Premium Quality">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">Premium Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/power.svg" loading="lazy" alt="Power-efficient" title="Power-efficient">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">Power-efficient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/pen.svg" loading="lazy" alt="Easy Customizations" title="Easy Customizations">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">Easy Customizations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/customer.svg" loading="lazy" alt="100% Satisfaction Rate" title="100% Satisfaction Rate">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">100% Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="support-list d-flex">
+                        <figure class="mb-0">
+                            <img src="assets/images/svg/mobile.svg" loading="lazy" alt="Phone Control" title="Phone Control">
+                        </figure>
+                        <div class="support-list-text">
+                            <p class="mb-0">Phone Control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-md page-section pb-3" id="features">
+        <div class="container">
+          <div class="row row-10 flex-lg-row-reverse align-items-lg-center">
+            <div class="col-lg-6 ">
+              <div class="title">
+                <h2 class="text-black head-title mb-0 pb-0">A few
+                   </h2>
+                   <h2 class="text-center" style="font-family:Golden_hopes;font-size: 7rem;color: #12dd7e;">lights away...</h2>
+            </div>
+              <p class="bigger mx-lg-5">Represent your business with a funky and stylish neon sign!</p>
+              <p class="bigger mx-lg-5">Send us your requirements and get custom-made neon logo's or quotes for your storefront and turn it into a desirable backdrop for all your work-time selfies.</p>
+              
+            </div>
+            <div class="col-lg-6 "><img class=" rounded-5 img-fluid" src="assets/images/svg/girls.webp" alt="girls" loading="lazy">
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="head-title" style="font-family: Golden_Hopes;"><span class="blue-color">
+                    Who </span> We Are? </h2>
+                    <img src="assets/images/download.jpg" alt="">
+            </div>
+        </div>
+      </section>
+    <my-footer></my-footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/font-awesome.js"></script>
+    <script src="assets/components/header.js"></script>
+    <script src="assets/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/components/story.js"></script>
+  </body>
+  
+
+</html>
