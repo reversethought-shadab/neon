@@ -174,7 +174,7 @@ class MyHeader extends HTMLElement {
               </div>
               <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                   <button class="btn-search btn btn-primary btn-primary-outline-0  icon-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search "></i></button>
-                  <a href="#" class="btn btn-cart btn-primary-outline-0 icon-circle rounded-pill py-3 px-4 ms-4" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href="cart.html" class="btn btn-cart btn-primary-outline-0 icon-circle rounded-pill py-3 px-4 ms-4" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
                   <a href="login.html" class="btn btn-user btn-primary-outline-0 icon-circle rounded-pill py-3 px-4 ms-4"><i class="fa-solid fa-user"></i></a>
                   <div class="cart">
                     <h2 class="cart-title">Your Cart</h2>
